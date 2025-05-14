@@ -31,9 +31,9 @@
     display: flex;
     align-items: center;
     gap: 60px;
-    max-width: 1200px; /* Добавлено для ограничения ширины */
-    margin: 0 auto; /* Центрирование */
-    padding: 0 20px; /* Отступы по бокам */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 .mission-text {
@@ -63,7 +63,7 @@
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.5s ease; /* Добавлен easing для плавности */
+    transition: transform 0.5s ease; 
 }
 
 .mission-image:hover img {
@@ -87,9 +87,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    max-width: 1200px; /* Ограничение ширины */
-    margin: 0 auto; /* Центрирование */
-    padding: 0 20px; /* Отступы по бокам */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 .team-member {
@@ -99,20 +99,20 @@
     text-align: center;
     padding-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавлен переход для тени */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Улучшенный эффект при наведении */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
 }
 
 .team-member img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin: 30px auto; /* Центрирование изображения */
-    border-radius: 50%; /* Круглые изображения для команды */
+    margin: 30px auto; 
+    border-radius: 50%; 
 }
 
 .team-member h3 {
@@ -130,7 +130,7 @@
     color: #666;
     padding: 0 20px;
     line-height: 1.6;
-    font-size: 1rem; /* Добавлен размер шрифта */
+    font-size: 1rem; 
 }
 
 /* Секция контактов */
@@ -142,9 +142,9 @@
 .contact-content {
     display: flex;
     gap: 60px;
-    max-width: 1200px; /* Ограничение ширины */
-    margin: 0 auto; /* Центрирование */
-    padding: 0 20px; /* Отступы по бокам */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 .contact-info {
@@ -170,9 +170,9 @@
 .contact-details p {
     margin-bottom: 15px;
     font-size: 1.1rem;
-    display: flex; /* Для лучшего выравнивания иконок */
+    display: flex; 
     align-items: center;
-    gap: 10px; /* Отступ между иконкой и текстом */
+    gap: 10px;
 }
 
 .social-links {
@@ -189,13 +189,12 @@
     height: 40px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Добавлен переход для трансформации */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .social-links a:hover {
     background-color: var(--dark-color);
-    transform: translateY(-3px); /* Эффект "подпрыгивания" */
-}
+    transform: translateY(-3px); 
 
 .social-links img {
     width: 20px;
@@ -215,7 +214,7 @@
 }
 
 .form-group label {
-    display: block; /* Добавлены метки для доступности */
+    display: block; 
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -227,14 +226,14 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
-    transition: border-color 0.3s ease; /* Добавлен easing */
+    transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--primary-color);
     outline: none;
-    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.1); /* Индикатор фокуса */
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.1); 
 }
 
 .form-group textarea {
@@ -242,7 +241,7 @@
     min-height: 120px;
 }
 
-/* Кнопка отправки (добавлена, так как в оригинале отсутствовала) */
+/* Кнопка отправки  */
 .submit-btn {
     background-color: var(--primary-color);
     color: white;
@@ -258,6 +257,7 @@
     background-color: var(--dark-color);
 }
 
+/* Адаптация  */
 @media (max-width: 768px) {
     /* Герой-секция */
     .about-about {
@@ -338,7 +338,6 @@
     }
 }
 
-/* Адаптация для мобильных (480px и меньше) */
 @media (max-width: 480px) {
     /* Герой-секция */
     .about-about {
@@ -404,7 +403,6 @@
     }
 }
 
-/* Дополнительные адаптации для очень маленьких экранов */
 @media (max-width: 360px) {
     .about-about h1 {
         font-size: 1.8rem;

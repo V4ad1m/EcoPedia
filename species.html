@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Редкие виды | EcoPedia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <span>EcoPedia</span>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="species.html" class="active">Виды</a></li>
+            <li><a href="#">Экосистемы</a></li>
+            <li><a href="about.html">О проекте</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </header>
+
+    <main class="species-page">
+      <div class="container">
+        <h1>Редкие виды растений и животных</h1>
+
+        <div class="species-controls">
+          <div class="search-box">
+            <input
+              type="text"
+              id="speciesSearch"
+              placeholder="Поиск по названию..."
+            />
+            <button id="searchBtn">Найти</button>
+          </div>
+
+          <div class="filters">
+            <select id="regionFilter">
+              <option value="">Все регионы</option>
+              <option value="europe">Европа</option>
+              <option value="asia">Азия</option>
+              <option value="africa">Африка</option>
+              <option value="america">Америка</option>
+              <option value="australia">Австралия и Океания</option>
+            </select>
+
+            <select id="categoryFilter">
+              <option value="">Все категории</option>
+              <option value="mammals">Млекопитающие</option>
+              <option value="birds">Птицы</option>
+              <option value="reptiles">Рептилии</option>
+              <option value="plants">Растения</option>
+              <option value="invertebrates">Беспозвоночные</option>
+            </select>
+
+            <select id="statusFilter">
+              <option value="">Все статусы</option>
+              <option value="CR">На грани исчезновения</option>
+              <option value="EN">Вымирающие</option>
+              <option value="VU">Уязвимые</option>
+              <option value="NT">Близки к уязвимому положению</option>
+              <option value="LC">Вызывающие наименьшие опасения</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="species-grid" id="speciesContainer">
+          <!-- Виды будут загружены через JavaScript -->
+        </div>
+
+        <div class="pagination">
+          <button id="prevPage">← Назад</button>
+          <span id="pageInfo">Страница 1 из 5</span>
+          <button id="nextPage">Вперед →</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Модальное окно для деталей вида -->
+    <div class="modal" id="speciesModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2 id="modalSpeciesName"></h2>
+          <span class="species-status" id="modalSpeciesStatus"></span>
+        </div>
+        <div class="modal-body">
+          <div class="species-gallery">
+            <img id="modalSpeciesImage" src="" alt="" />
+            <div class="thumbnails" id="speciesThumbnails"></div>
+          </div>
+          <div class="species-info">
+            <div class="info-section">
+              <h3>Описание</h3>
+              <p id="modalSpeciesDesc"></p>
+            </div>
+            <div class="info-section">
+              <h3>Ареал обитания</h3>
+              <p id="modalSpeciesRange"></p>
+              <div class="range-map">
+                <img
+                  src=""
+                  alt="Ареал обитания"
+                  id="rangeImage"
+                  class="range-image"
+                />
+              </div>
+              <div class="info-section">
+                <h3>Основные угрозы</h3>
+                <ul id="modalSpeciesThreats"></ul>
+              </div>
+              <div class="info-section">
+                <h3>Меры охраны</h3>
+                <ul id="modalSpeciesConservation"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="">
+                <span>EcoPedia</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="species.html">Виды</a></li>
+                        <li><a href="#">Экосистемы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#">Охрана природы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Партнерство</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 EcoPedia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/species.js"></script>
+  </body>
+</html>

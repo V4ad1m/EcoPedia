@@ -1,0 +1,425 @@
+/* Герой-секция */
+.about-about {
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 60px;
+}
+
+.about-about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-about .subtitle {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+/* Секция миссии */
+.mission-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px; /* Добавлено для ограничения ширины */
+    margin: 0 auto; /* Центрирование */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 25px;
+}
+
+.mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.mission-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease; /* Добавлен easing для плавности */
+}
+
+.mission-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Секция команды */
+.team-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 60px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавлен переход для тени */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Улучшенный эффект при наведении */
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 30px auto; /* Центрирование изображения */
+    border-radius: 50%; /* Круглые изображения для команды */
+}
+
+.team-member h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.position {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.bio {
+    color: #666;
+    padding: 0 20px;
+    line-height: 1.6;
+    font-size: 1rem; /* Добавлен размер шрифта */
+}
+
+/* Секция контактов */
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.contact-content {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px; /* Ограничение ширины */
+    margin: 0 auto; /* Центрирование */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex; /* Для лучшего выравнивания иконок */
+    align-items: center;
+    gap: 10px; /* Отступ между иконкой и текстом */
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Добавлен переход для трансформации */
+}
+
+.social-links a:hover {
+    background-color: var(--dark-color);
+    transform: translateY(-3px); /* Эффект "подпрыгивания" */
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; /* Добавлены метки для доступности */
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Добавлен easing */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.1); /* Индикатор фокуса */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Кнопка отправки (добавлена, так как в оригинале отсутствовала) */
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+    /* Герой-секция */
+    .about-about {
+        padding: 80px 20px;
+    }
+    
+    .about-about h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .about-about .subtitle {
+        font-size: 1.2rem;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    /* Секция миссии */
+    .mission-section {
+        padding: 60px 20px;
+    }
+    
+    .mission-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .mission-text {
+        order: 2;
+        text-align: center;
+    }
+    
+    .mission-image {
+        order: 1;
+        max-width: 100%;
+    }
+
+    /* Секция команды */
+    .team-section {
+        padding: 60px 20px;
+    }
+    
+    .team-section h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .team-member {
+        max-width: 100%;
+    }
+    
+    .team-member img {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    /* Секция контактов */
+    .contact-section {
+        padding: 60px 20px;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+/* Адаптация для мобильных (480px и меньше) */
+@media (max-width: 480px) {
+    /* Герой-секция */
+    .about-about {
+        padding: 60px 15px;
+    }
+    
+    .about-about h1 {
+        font-size: 2rem;
+    }
+    
+    .about-about .subtitle {
+        font-size: 1rem;
+    }
+
+    /* Секция миссии */
+    .mission-section {
+        padding: 50px 15px;
+    }
+    
+    .mission-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .mission-text p {
+        font-size: 1rem;
+    }
+
+    /* Секция команды */
+    .team-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .team-member h3 {
+        font-size: 1.2rem;
+    }
+    
+    .position {
+        font-size: 0.9rem;
+    }
+
+    /* Секция контактов */
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-details p {
+        font-size: 1rem;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+}
+
+/* Дополнительные адаптации для очень маленьких экранов */
+@media (max-width: 360px) {
+    .about-about h1 {
+        font-size: 1.8rem;
+    }
+    
+    .team-member {
+        padding: 0 15px 20px;
+    }
+    
+    .bio {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+}

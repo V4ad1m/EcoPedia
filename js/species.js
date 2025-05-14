@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Загрузка данных
     async function loadSpeciesData() {
         try {
-            // В реальном приложении здесь был бы fetch к API
             // Для примера используем мок данные
             allSpecies = await fetchSpeciesData();
             filteredSpecies = [...allSpecies];

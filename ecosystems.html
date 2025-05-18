@@ -1,11 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экосистемы | EcoPedia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <span>EcoPedia</span>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="species.html">Виды</a></li>
+            <li><a href="ecosystems.html" class="active">Экосистемы</a></li>
+            <li><a href="quiz.html">Викторина</a></li>
+            <li><a href="about.html">О проекте</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">☰</button>
+      </div>
+    </header>
+
+    <main class="ecosystems-page">
+      <div class="container">
+        <h1>Уникальные экосистемы мира</h1>
+
+        <div class="ecosystems-controls">
+          <div class="search-box">
+            <input
+              type="text"
+              id="ecosystemsSearch"
+              placeholder="Поиск по названию..."
+            />
+            <button id="searchBtn">Найти</button>
+          </div>
+
+          <div class="filters">
+            <select id="climateFilter">
+            </select>
+
+            <select id="typeFilter">
+            </select>
+
+            <select id="threatFilter">
+            </select>
+          </div>
+        </div>
+
+        <div class="ecosystems-grid" id="ecosystemsContainer">
+          <!-- Экосистемы будут загружены через JavaScript -->
+        </div>
+
+        <div class="pagination">
+          <button id="prevPage">← Назад</button>
+          <span id="pageInfo">Страница 1 из 1</span>
+          <button id="nextPage">Вперед →</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Модальное окно для деталей экосистемы -->
+    <div class="modal" id="ecosystemModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2 id="modalEcosystemName"></h2>
+        </div>
+        <div class="modal-body">
+          <div class="ecosystem-gallery">
+            <img id="modalEcosystemImage" src="" alt="" />
+            <div class="thumbnails" id="ecosystemThumbnails"></div>
+          </div>
+          <div class="ecosystem-info">
+            <div class="info-section">
+              <h3>Описание</h3>
+              <p id="modalEcosystemDesc"></p>
+            </div>
+            <div class="info-section">
+              <h3>Географическое положение</h3>
+              <p id="modalEcosystemLocation"></p>
+              <div class="location-map">
+                <img
+                  src=""
+                  alt="Карта расположения"
+                  id="locationImage"
+                  class="location-image"
+                />
+              </div>
+            </div>
+            <div class="info-section">
+              <h3>Климатические особенности</h3>
+              <p id="modalEcosystemClimate"></p>
+            </div>
+            <div class="info-section">
+              <h3>Биоразнообразие</h3>
+              <ul id="modalEcosystemBiodiversity"></ul>
+            </div>
+            <div class="info-section">
+              <h3>Основные угрозы</h3>
+              <ul id="modalEcosystemThreats"></ul>
+            </div>
+            <div class="info-section">
+              <h3>Меры охраны</h3>
+              <ul id="modalEcosystemConservation"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
-</body>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="images/logo-white.png" alt="" />
+          <span>EcoPedia</span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Навигация</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="species.html">Виды</a></li>
+              <li><a href="ecosystems.html">Экосистемы</a></li>
+              <li><a href="quiz.html">Викторина</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Ресурсы</h4>
+            <ul>
+              <li><a href="#">Охрана природы</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Новости</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <ul>
+              <li><a href="about.html">О проекте</a></li>
+              <li><a href="#">Связаться с нами</a></li>
+              <li><a href="#">Партнерство</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 EcoPedia.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ecosystems.js"></script>
+  </body>
 </html>

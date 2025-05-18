@@ -229,7 +229,8 @@ ul {
 }
 
 /* Карточки видов */
-.species-grid {
+.species-grid,
+.ecosystems-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
@@ -240,7 +241,8 @@ ul {
   margin-right: auto;
 }
 
-.species-card {
+.species-card,
+.ecosystem-card {
   background-color: var(--white);
   border-radius: 8px;
   overflow: hidden;
@@ -248,29 +250,34 @@ ul {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.species-card:hover {
+.species-card:hover,
+.ecosystem-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.species-card img {
+.species-card img,
+.ecosystem-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-.species-card-content {
+.species-card-content,
+.ecosystem-card-content {
   padding: 20px;
 }
 
-.species-card h3 {
+.species-card h3,
+.ecosystem-card h3 {
   color: var(--primary-dark);
   margin-bottom: 10px;
   font-size: 1.25rem;
 }
 
-.species-status {
+.species-status,
+.ecosystem-climate {
   display: inline-block;
   padding: 4px 12px;
   background-color: var(--secondary-color);
@@ -283,14 +290,16 @@ ul {
   transition: all 0.3s ease;
 }
 
-.species-status span {
+.species-status span,
+.ecosystem-climate span {
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.species-card p {
+.species-card p,
+.ecosystem-card p {
   color: var(--gray-color);
   margin: 15px 0;
   display: -webkit-box;
@@ -312,16 +321,39 @@ ul {
   color: var(--primary-dark);
 }
 
-/* Страница видов */
-.species-page h1 {
+/* Страница видов, Страница экосистем */
+.species-gallery,
+.ecosystem-gallery {
+  padding: 20px;
+}
+
+.species-gallery img,
+.ecosystem-gallery img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.species-page h1,
+.ecosystems-page h1 {
   text-align: center;
   padding: 30px 20px;
   color: var(--primary-dark);
   margin: 0;
 }
 
+.species-info,
+.ecosystem-info {
+  border-top: 1px solid #eee;
+  border-left: none;
+  padding: 15px;
+}
+
 /* Управляющие элементы */
-.species-controls {
+.species-controls,
+.ecosystems-controls {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -334,12 +366,8 @@ ul {
   max-width: 1400px;
 }
 
-.search-box {
-  display: flex;
-  flex-grow: 1;
-}
-
-#speciesSearch {
+#speciesSearch,
+#ecosystemsSearch {
   flex: 1;
   padding: 12px 15px;
   border: 1px solid #ddd;
@@ -349,9 +377,16 @@ ul {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#speciesSearch:focus {
+#speciesSearch:focus,
+#ecosystemsSearch:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  /* flex-grow: 1; */
 }
 
 #searchBtn {
@@ -461,19 +496,6 @@ ul {
   flex-direction: column;
 }
 
-.species-gallery,
-.species-info {
-  padding: 20px;
-}
-
-.species-gallery img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: contain;
-  border-radius: 4px;
-  background: #f5f5f5;
-}
-
 .thumbnails {
   display: flex;
   gap: 10px;
@@ -498,10 +520,6 @@ ul {
   transform: scale(1.05);
 }
 
-.species-info {
-  border-top: 1px solid #eee;
-}
-
 .info-section {
   margin-bottom: 25px;
 }
@@ -513,7 +531,8 @@ ul {
   border-bottom: 2px solid var(--primary-light);
 }
 
-.range-map {
+.range-map,
+.location-map {
   width: 100%;
   height: 400px;
   background-color: #f5f5f5;
@@ -528,19 +547,22 @@ ul {
   border: 1px solid #e0e0e0;
 }
 
-.range-image {
+.range-image,
+.location-image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-.range-image:hover {
+.range-image:hover,
+.location-image:hover {
   transform: scale(1.02);
 }
 
-.range-map::before {
-  content: "Карта ареала обитания";
+.range-map::before,
+.location-map::before {
+  content: "Карта";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -624,34 +646,29 @@ ul {
     padding: 15px 20px;
   }
 
-  .footer-links {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-
   .nav {
     display: none;
     width: 100%;
     order: 3;
     margin-top: 15px;
   }
-  
+
   .nav.active {
     display: block;
   }
-  
+
   .nav ul {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .nav ul li a {
     display: block;
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
   }
-  
+
   .mobile-menu-btn {
     display: block;
     order: 2;
@@ -660,44 +677,51 @@ ul {
   .hero {
     padding: 80px 0;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero p {
     font-size: 1rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .btn {
     width: 100%;
     text-align: center;
   }
 
+  .footer-links {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
   .footer-column {
     text-align: center;
   }
-  
+
   .footer-column h4::after {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .species-status {
+  .species-status,
+  .ecosystem-climate {
     font-size: 0.75rem;
     padding: 3px 10px;
   }
 
-  .species-card img {
+  .species-card img,
+  .ecosystem-card img {
     height: 150px;
   }
-  
-  .species-card-content {
+
+  .species-card-content,
+  .ecosystem-card-content {
     padding: 15px;
   }
 
@@ -709,16 +733,6 @@ ul {
   .modal-body {
     flex-direction: column;
   }
-
-  .species-info {
-    border-left: none;
-    padding: 15px;
-  }
-
-  .species-gallery {
-    padding: 15px;
-  }
-
   .modal-header {
     padding: 15px;
   }
@@ -728,13 +742,11 @@ ul {
     height: 50px;
   }
 
-  .range-map {
-    height: 150px;
-  }
-
-  .species-controls {
+  .species-controls,
+  .ecosystems-controls {
     flex-direction: column;
     align-items: stretch;
+    padding: 15px;
   }
 
   .search-box,
@@ -750,29 +762,27 @@ ul {
   .pagination {
     gap: 8px;
   }
-  
+
   .pagination button {
     padding: 6px 12px;
     font-size: 12px;
   }
-  
+
   #pageInfo {
     padding: 6px 10px;
     font-size: 12px;
     min-width: 90px;
   }
-  
-  .species-grid {
+
+  .species-grid,
+  .ecosystems-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 0 15px;
   }
-  
-  .species-controls {
-    padding: 15px;
-  }
-  
-  .range-map {
+
+  .range-map,
+  .location-map {
     height: 250px;
     margin: 15px 0;
   }
@@ -786,11 +796,11 @@ ul {
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   .btn {
     width: 100%;
   }
-  
+
   .footer-logo {
     flex-direction: column;
     text-align: center;
@@ -803,39 +813,34 @@ ul {
     white-space: normal;
     line-height: 1.2;
   }
-  
+
   .species-status span {
     white-space: normal;
   }
 
-  .species-card img {
+  .species-card img,
+  .ecosystem-card img {
     height: 180px;
   }
-  
-  .species-card-content {
+
+  .species-card-content,
+  .ecosystem-card-content {
     padding: 15px;
   }
-  
-  .modal-content {
-    margin: 20px auto;
-    width: calc(100% - 20px);
-  }
-  
-  .species-gallery img {
-    max-height: 250px;
-  }
-  
+
   .thumbnails img {
     width: 50px;
     height: 50px;
   }
 
-  .range-map {
+  .range-map,
+  .location-map {
     height: 200px;
     margin: 10px 0;
   }
-  
-  .range-map::before {
+
+  .range-map::before,
+  .location-map::before {
     font-size: 0.8rem;
     padding: 3px 8px;
   }

@@ -1,14 +1,13 @@
-// Функция для получения данных о видах (в реальном приложении это был бы fetch к API)
+// Функция для получения данных о видах
 async function fetchSpeciesData() {
-  // Это мок данные - в реальном приложении они бы приходили с сервера
   return [
     {
       id: "1",
       name: "Амурский тигр",
-      latinName: "Panthera tigris altaica",
-      category: "mammals",
-      region: "asia",
-      status: "EN",
+      latinName: "PaБлизки к уязвимому положениюhera tigris altaica",
+      category: "Млекопитающие",
+      region: "Азия",
+      status: "Вымирающие",
       shortDescription:
         "Крупнейший представитель семейства кошачьих, обитающий в Приморском и Хабаровском краях России.",
       description:
@@ -32,15 +31,15 @@ async function fetchSpeciesData() {
         "images/amur-tiger2.jpg",
         "images/amur-tiger3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/amur-tiger-range.jpg",
     },
     {
       id: "2",
       name: "Лотос Комарова",
       latinName: "Nelumbo komarovii",
-      category: "plants",
-      region: "asia",
-      status: "VU",
+      category: "Растения",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         "Водное растение с крупными розовыми цветами, произрастающее на Дальнем Востоке России.",
       description:
@@ -66,9 +65,9 @@ async function fetchSpeciesData() {
       id: "3",
       name: "Стеноглоттис",
       latinName: "Stenoglottis",
-      category: "plants",
-      region: "africa",
-      status: "VU",
+      category: "Растения",
+      region: "Африка",
+      status: "Уязвимые",
       shortDescription:
         "Тропическое растение с красивыми цветами, произрастающее в Южной Африке.",
       description:
@@ -87,19 +86,19 @@ async function fetchSpeciesData() {
         "Просветительская работа среди садоводов",
       ],
       images: [
-        "images/stenoglottis1.jpg",
-        "images/stenoglottis2.jpg",
-        "images/stenoglottis3.jpg",
+        "images/Stenoglottis1.jpg",
+        "images/Stenoglottis2.jpg",
+        "images/Stenoglottis3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/Stenoglottis-range.jpg",
     },
     {
       id: "4",
       name: "Ангулоа",
       latinName: "Anguloa",
-      category: "plants",
-      region: "america",
-      status: "LC",
+      category: "Растения",
+      region: "Америка",
+      status: "Вызывающие наименьшие опасения",
       shortDescription:
         "Орхидея с необычными цветами, произрастающая в тропических лесах Колумбии и Эквадора.",
       description:
@@ -122,16 +121,16 @@ async function fetchSpeciesData() {
         "images/anguloa2.jpg",
         "images/anguloa3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/anguloa-range.jpg",
     },
 
     {
       id: "5",
       name: "Суматранский носорог",
-      latinName: "Dicerorhinus sumatrensis",
-      category: "mammals",
-      region: "asia",
-      status: "CR",
+      latinName: "Dicerorhinus sumatrВымирающиеsis",
+      category: "Млекопитающие",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Самый мелкий из современных носорогов, находящийся на грани исчезновения из-за браконьерства и потери среды обитания.",
       description:
@@ -157,15 +156,15 @@ async function fetchSpeciesData() {
         "images/sumatran_rhino2.jpg",
         "images/sumatran_rhino3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/sumatran-rhino-range.jpg",
     },
     {
       id: "6",
       name: "Яванский носорог",
       latinName: "Rhinoceros sondaicus",
-      category: "mammals",
-      region: "asia",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Один из самых редких крупных млекопитающих планеты, сохранившийся только в национальном парке Уджунг-Кулон на Яве.",
       description:
@@ -191,19 +190,19 @@ async function fetchSpeciesData() {
         "images/javan_rhino2.jpg",
         "images/javan_rhino3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/javan-rhino-range.jpg",
     },
     {
       id: "7",
       name: "Дипсис",
       latinName: "Dypsis",
-      category: "plants",
-      region: "africa",
-      status: "LC",
+      category: "Растения",
+      region: "Африка",
+      status: "Вызывающие наименьшие опасения",
       shortDescription:
         "Род пальм, характерный для Мадагаскара, с красивыми листьями и стволами.",
       description:
-        "Дипсис - род пальм, насчитывающий более 100 видов, многие из которых являются эндемиками Мадагаскара. Эти растения имеют стройные стволы и крупные перистые листья, которые могут достигать длины до 3 метров. Цветки небольшие, собраны в соцветия, и могут быть желтыми или белыми. Дипсис предпочитает влажные тропические леса и растет на высотах до 1000 метров над уровнем моря. Пальмы этого рода широко используются в ландшафтном дизайне благодаря своей экзотической внешности.",
+        "Дипсис - род пальм, насчитывающий более 100 видов, многие из которых являются эндемиками Мадагаскара. Эти Растения имеют стройные стволы и крупные перистые листья, которые могут достигать длины до 3 метров. Цветки небольшие, собраны в соцветия, и могут быть желтыми или белыми. Дипсис предпочитает влажные тропические леса и растет на высотах до 1000 метров над уровнем моря. Пальмы этого рода широко используются в ландшафтном дизайне благодаря своей экзотической внешности.",
       range: "Мадагаскар, Коморские острова",
       threats: [
         "Вырубка лесов и уничтожение естественных мест обитания",
@@ -222,19 +221,19 @@ async function fetchSpeciesData() {
         "images/dypsis2.jpg",
         "images/dypsis3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/dypsis-range.jpg",
     },
     {
       id: "8",
       name: "Драцена",
       latinName: "Dracaena",
-      category: "plants",
-      region: "africa",
-      status: "LC",
+      category: "Растения",
+      region: "Африка",
+      status: "Вызывающие наименьшие опасения",
       shortDescription:
         "Род многолетних растений с характерными мечевидными листьями и стволами.",
       description:
-        "Драцена - это род многолетних растений, насчитывающий более 120 видов, которые встречаются в тропических и субтропических регионах Африки, Азии и Центральной Америки. Эти растения могут иметь как древесные, так и травянистые стебли, часто с яркими и декоративными листьями. Листья могут быть зеленого, желтого или красного цвета, в зависимости от вида. Драцены часто используются в качестве комнатных растений благодаря своей неприхотливости и способности очищать воздух. Цветки драцены обычно мелкие и собраны в соцветия, но цветение в домашних условиях происходит редко.",
+        "Драцена - это род многолетних растений, насчитывающий более 120 видов, которые встречаются в тропических и субтропических регионах Африки, Азии и Центральной Америки. Эти Растения могут иметь как древесные, так и травянистые стебли, часто с яркими и декоративными листьями. Листья могут быть зеленого, желтого или красного цвета, в зависимости от вида. Драцены часто используются в качестве комнатных растений благодаря своей неприхотливости и способности очищать воздух. Цветки драцены обычно мелкие и собраны в соцветия, но цветение в домашних условиях происходит редко.",
       range: "Африка, Азия, Центральная Америка",
       threats: [
         "Вырубка лесов и уничтожение естественных мест обитания",
@@ -253,15 +252,15 @@ async function fetchSpeciesData() {
         "images/dracaena2.jpg",
         "images/dracaena3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/dracaena-range.jpg",
     },
     {
       id: "9",
       name: "Снежный барс",
-      latinName: "Panthera uncia",
-      category: "mammals",
-      region: "asia",
-      status: "VU",
+      latinName: "PaБлизки к уязвимому положениюhera uncia",
+      category: "Млекопитающие",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         'Крупная хищная кошка, обитающая в высокогорьях Центральной Азии, известная как "призрак гор" из-за скрытного образа жизни.',
       description:
@@ -287,15 +286,15 @@ async function fetchSpeciesData() {
         "images/snow_leopard2.jpg",
         "images/snow_leopard3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/snow-leopard-range.jpg",
     },
     {
       id: "10",
       name: "Орангутан Борнейский",
       latinName: "Pongo pygmaeus",
-      category: "mammals",
-      region: "asia",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Крупная человекообразная обезьяна, эндемик острова Борнео, находящаяся под критической угрозой исчезновения из-за вырубки лесов.",
       description:
@@ -315,22 +314,22 @@ async function fetchSpeciesData() {
         "Сертификация экологически чистого пальмового масла (RSPO)",
         "Экологическое просвещение местного населения",
         "Международное сотрудничество в рамках программ сохранения",
-        "Разведение в зоопарках для сохранения генетического разнообразия",
+        "Разведение в зоопарках для сохранения генетического разнообрАзия",
       ],
       images: [
         "images/bornean_orangutan1.jpg",
         "images/bornean_orangutan2.jpg",
         "images/bornean_orangutan3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/bornean-orangutan-range.jpg",
     },
     {
       id: "11",
       name: "Кагу",
       latinName: "Rhynochetos jubatus",
-      category: "birds",
-      region: "asia",
-      status: "CR",
+      category: "Птицы",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Редкая нелетающая птица-эндемик Новой Каледонии с характерным пепельно-белым оперением и красными глазами.",
       description:
@@ -351,20 +350,24 @@ async function fetchSpeciesData() {
         "Реинтродукция выращенных в неволе особей",
         "Мониторинг дикой популяции",
       ],
-      images: ["images/kagu1.jpg", "images/kagu2.jpg", "images/kagu3.jpg"],
-      rangeImage: "images/lotus-range.jpg",
+      images: [
+        "images/kagu1.jpg", 
+        "images/kagu2.jpg", 
+        "images/kagu3.jpg"
+      ],
+      rangeImage: "images/kagu-range.jpg",
     },
     {
       id: "12",
       name: "Филиппинский орёл",
       latinName: "Pithecophaga jefferyi",
-      category: "birds",
-      region: "asia",
-      status: "CR",
+      category: "Птицы",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Одна из самых редких и крупных хищных птиц в мире, эндемик Филиппин, находящийся на грани исчезновения.",
       description:
-        "Филиппинский орёл — величественная хищная птица семейства ястребиных, достигающая длины 86-102 см и веса 4,7-8 кг. Имеет тёмно-коричневое оперение с белым брюшком, мощный клюв и характерный растрёпанный хохолок из длинных перьев на голове. Размах крыльев — до 2,2 метров. Охотится на обезьян, шерстокрылов, крупных птиц и других лесных животных. Гнездится на вершинах высоких деревьев (до 30 м). Является национальной птицей Филиппин и символом сохранения биоразнообразия страны.",
+        "Филиппинский орёл — величественная хищная птица семейства ястребиных, достигающая длины 86-102 см и веса 4,7-8 кг. Имеет тёмно-коричневое оперение с белым брюшком, мощный клюв и характерный растрёпанный хохолок из длинных перьев на голове. Размах крыльев — до 2,2 метров. Охотится на обезьян, шерстокрылов, крупных птиц и других лесных животных. Гнездится на вершинах высоких деревьев (до 30 м). Является национальной птицей Филиппин и символом сохранения биоразнообрАзия страны.",
       range: "Филиппины (острова Лусон, Самар, Лейте и Минданао)",
       threats: [
         "Массовая вырубка тропических лесов",
@@ -386,15 +389,15 @@ async function fetchSpeciesData() {
         "images/philippine_eagle2.jpg",
         "images/philippine_eagle3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/philippine-eagle-range.jpg",
     },
     {
       id: "13",
       name: "Райская мухоловка",
       latinName: "Terpsiphone paradisi",
-      category: "birds",
-      region: "asia",
-      status: "VU",
+      category: "Птицы",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         "Небольшая певчая птица с чрезвычайно длинными хвостовыми перьями у самцов, обитающая в лесах Южной и Юго-Восточной Азии.",
       description:
@@ -420,15 +423,15 @@ async function fetchSpeciesData() {
         "images/asian_paradise_flycatcher2.jpg",
         "images/asian_paradise_flycatcher3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/asian-paradise-flycatcher-range.jpg",
     },
     {
       id: "14",
       name: "Большой индийский дрофа",
       latinName: "Ardeotis nigriceps",
-      category: "birds",
-      region: "asia",
-      status: "VU",
+      category: "Птицы",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         "Одна из самых тяжелых летающих птиц, обитающая в засушливых регионах Индийского субконтинента.",
       description:
@@ -454,15 +457,15 @@ async function fetchSpeciesData() {
         "images/great_indian_bustard2.jpg",
         "images/great_indian_bustard3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/great-indian-bustard-range.jpg",
     },
     {
       id: "15",
       name: "Гангский гавиал",
       latinName: "Gavialis gangeticus",
-      category: "reptiles",
-      region: "asia",
-      status: "CR",
+      category: "Рептилии",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Крупный крокодил с характерным узким рылом, эндемик речных систем Южной Азии.",
       description:
@@ -487,15 +490,15 @@ async function fetchSpeciesData() {
         "images/ganges_gharial2.jpg",
         "images/ganges_gharial3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/ganges-gharial-range.jpg",
     },
     {
       id: "16",
       name: "Бирманская звездчатая черепаха",
       latinName: "Geochelone platynota",
-      category: "reptiles",
-      region: "asia",
-      status: "CR",
+      category: "Рептилии",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Сухопутная черепаха с красивым звездчатым рисунком на панцире, эндемик Мьянмы.",
       description:
@@ -520,15 +523,15 @@ async function fetchSpeciesData() {
         "images/burmese_star_tortoise2.jpg",
         "images/burmese_star_tortoise3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/burmese-star-tortoise-range.jpg",
     },
     {
       id: "17",
       name: "Комодский варан",
       latinName: "Varanus komodoensis",
-      category: "reptiles",
-      region: "asia",
-      status: "EN",
+      category: "Рептилии",
+      region: "Азия",
+      status: "Вымирающие",
       shortDescription:
         "Крупнейшая в мире ящерица, дракон индонезийских островов.",
       description:
@@ -553,15 +556,15 @@ async function fetchSpeciesData() {
         "images/komodo_dragon2.jpg",
         "images/komodo_dragon3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/komodo-dragon-range.jpg",
     },
     {
       id: "18",
       name: "Королевская кобра",
       latinName: "Ophiophagus hannah",
-      category: "reptiles",
-      region: "asia",
-      status: "VU",
+      category: "Рептилии",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         "Самая крупная ядовитая змея мира, достигающая 5,5 м в длину.",
       description:
@@ -587,15 +590,15 @@ async function fetchSpeciesData() {
         "images/king_cobra2.jpg",
         "images/king_cobra3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/king-cobra-range.jpg",
     },
     {
       id: "19",
       name: "Азиатская узкотелая черепаха",
       latinName: "Chitra chitra",
-      category: "reptiles",
-      region: "asia",
-      status: "VU",
+      category: "Рептилии",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         "Крупная пресноводная черепаха с необычным уплощенным панцирем.",
       description:
@@ -620,15 +623,15 @@ async function fetchSpeciesData() {
         "images/asian_narrow-headed_turtle2.jpg",
         "images/asian_narrow-headed_turtle3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/asian-narrow-headed-turtle-range.jpg",
     },
     {
       id: "20",
       name: "Китайский речной краб",
       latinName: "Eriocheir sinensis",
-      category: "invertebrates",
-      region: "asia",
-      status: "CR",
+      category: "Беспозвоночные",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Пресноводный краб с характерными мохнатыми клешнями, находящийся под угрозой исчезновения в естественной среде обитания.",
       description:
@@ -655,15 +658,15 @@ async function fetchSpeciesData() {
         "images/chinese_mitten_crab2.jpg",
         "images/chinese_mitten_crab3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/chinese-mitten-crab-range.jpg",
     },
     {
       id: "21",
       name: "Гималайский жук-олень",
       latinName: "Lucanus cervus himalayanus",
-      category: "invertebrates",
-      region: "asia",
-      status: "CR",
+      category: "Беспозвоночные",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Крупнейший подвид жука-оленя с массивными рогообразными мандибулами, эндемик восточных Гималаев.",
       description:
@@ -690,15 +693,15 @@ async function fetchSpeciesData() {
         "images/himalayan_stag_beetle2.jpg",
         "images/himalayan_stag_beetle3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/himalayan-stag-beetle-range.jpg",
     },
     {
       id: "22",
       name: "Пиренейская рысь",
       latinName: "Lynx pardinus",
-      category: "mammals",
-      region: "europe",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Редкий вид дикой кошки, обитающий в лесах и кустарниковых зарослях Испании и Португалии. Находится на грани исчезновения.",
       description:
@@ -725,15 +728,15 @@ async function fetchSpeciesData() {
         "images/iberian_lynx2.jpg",
         "images/iberian_lynx3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/iberian-lynx-range.jpg",
     },
     {
       id: "23",
       name: "Европейский хомяк",
       latinName: "Cricetus cricetus",
-      category: "mammals",
-      region: "europe",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Крупный грызун с ярким окрасом, обитающий в степных и сельскохозяйственных районах Европы. Находится на грани исчезновения.",
       description:
@@ -760,15 +763,15 @@ async function fetchSpeciesData() {
         "images/european_hamster2.jpg",
         "images/european_hamster3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/european-hamster-range.jpg",
     },
     {
       id: "24",
       name: "Сайгак",
       latinName: "Saiga tatarica",
-      category: "mammals",
-      region: "europe_asia",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Европа", 
+      status: "На грани исчезновения",
       shortDescription:
         "Уникальная антилопа с характерным носом-хоботком, обитающая в степях Евразии. Находится на грани исчезновения.",
       description:
@@ -790,16 +793,20 @@ async function fetchSpeciesData() {
         "Восстановление степных экосистем",
         "Международное сотрудничество (CMS, CITES)",
       ],
-      images: ["images/saiga1.jpg", "images/saiga2.jpg", "images/saiga3.jpg"],
-      rangeImage: "images/lotus-range.jpg",
+      images: [
+        "images/saiga1.jpg", 
+        "images/saiga2.jpg", 
+        "images/saiga3.jpg"
+      ],
+      rangeImage: "images/saiga-range.jpg",
     },
     {
       id: "25",
       name: "Бурый медведь",
       latinName: "Ursus arctos",
-      category: "mammals",
-      region: "europe",
-      status: "LC",
+      category: "Млекопитающие",
+      region: "Европа",
+      status: "Вызывающие наименьшие опасения",
       shortDescription:
         "Крупный хищник, обитающий в лесах Европы, важный элемент экосистемы. В некоторых регионах находится под угрозой.",
       description:
@@ -826,15 +833,15 @@ async function fetchSpeciesData() {
         "images/brown_bear2.jpg",
         "images/brown_bear3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/brown-bear-range.jpg",
     },
     {
       id: "26",
       name: "Зубр",
       latinName: "Bison bonasus",
-      category: "mammals",
-      region: "europe",
-      status: "NT",
+      category: "Млекопитающие",
+      region: "Европа",
+      status: "Близки к уязвимому положению",
       shortDescription:
         "Крупнейшее наземное млекопитающее Европы, символ природоохранного успеха после почти полного истребления.",
       description:
@@ -856,16 +863,20 @@ async function fetchSpeciesData() {
         "Международное сотрудничество (Европейская программа сохранения зубра)",
         "Экопросвещение и развитие экотуризма",
       ],
-      images: ["images/bison1.jpg", "images/bison2.jpg", "images/bison3.jpg"],
-      rangeImage: "images/lotus-range.jpg",
+      images: [
+        "images/bison1.jpg",
+        "images/bison2.jpg",
+        "images/bison3.jpg"
+      ],
+      rangeImage: "images/bison-range.jpg",
     },
     {
       id: "27",
       name: "Северный белый носорог",
       latinName: "Ceratotherium simum cottoni",
-      category: "mammals",
-      region: "africa",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Африка",
+      status: "На грани исчезновения",
       shortDescription:
         "Самый редкий носорог в мире, представленный всего двумя особями (самками) в заповеднике Ол Педжета, Кения.",
       description:
@@ -875,7 +886,7 @@ async function fetchSpeciesData() {
       threats: [
         "Браконьерство (из-за ценности рога на черном рынке)",
         "Военные конфликты в местах обитания",
-        "Утрата генетического разнообразия",
+        "Утрата генетического разнообрАзия",
         "Потеря естественной среды обитания",
       ],
       conservationMeasures: [
@@ -890,15 +901,15 @@ async function fetchSpeciesData() {
         "images/northern_white_rhino2.jpg",
         "images/northern_white_rhino3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/northern-white-rhino-range.jpg",
     },
     {
       id: "28",
       name: "Аддакс",
       latinName: "Addax nasomaculatus",
-      category: "mammals",
-      region: "africa",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Африка",
+      status: "На грани исчезновения",
       shortDescription:
         "Пустынная антилопа с спиралевидными рогами, находящаяся на грани исчезновения из-за браконьерства и изменения климата.",
       description:
@@ -919,16 +930,20 @@ async function fetchSpeciesData() {
         "Создание трансграничных охраняемых зон",
         "Мониторинг оставшихся популяций с помощью спутниковых ошейников",
       ],
-      images: ["images/addax1.jpg", "images/addax2.jpg", "images/addax3.jpg"],
-      rangeImage: "images/lotus-range.jpg",
+      images: [
+        "images/addax1.jpg", 
+        "images/addax2.jpg", 
+        "images/addax3.jpg"
+      ],
+      rangeImage: "images/addax-range.jpg",
     },
     {
       id: "29",
       name: "Африканский лесной слон",
       latinName: "Loxodonta cyclotis",
-      category: "mammals",
-      region: "africa",
-      status: "CR",
+      category: "Млекопитающие",
+      region: "Африка",
+      status: "На грани исчезновения",
       shortDescription:
         "Меньший по размерам, но не менее важный родственник саванного слона, обитающий в тропических лесах Центральной Африки.",
       description:
@@ -955,15 +970,15 @@ async function fetchSpeciesData() {
         "images/forest_elephant2.jpg",
         "images/forest_elephant3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/forest-elephant-range.jpg",
     },
     {
       id: "30",
       name: "Гепард",
       latinName: "Acinonyx jubatus",
-      category: "mammals",
-      region: "africa",
-      status: "VU",
+      category: "Млекопитающие",
+      region: "Африка",
+      status: "Уязвимые",
       shortDescription:
         "Самое быстрое наземное животное, способное развивать скорость до 112 км/ч, находящееся под угрозой исчезновения из-за потери среды обитания.",
       description:
@@ -974,7 +989,7 @@ async function fetchSpeciesData() {
         "Потеря и фрагментация среды обитания (75% ареала вне охраняемых территорий)",
         "Конфликты с фермерами (убийство как угрозы скоту)",
         "Незаконная торговля котятами (для частных коллекций)",
-        "Снижение генетического разнообразия",
+        "Снижение генетического разнообрАзия",
         "Сокращение популяции добычи (газелей, импал)",
       ],
       conservationMeasures: [
@@ -990,15 +1005,15 @@ async function fetchSpeciesData() {
         "images/cheetah2.jpg",
         "images/cheetah3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/cheetah-range.jpg",
     },
     {
       id: "31",
       name: "Горилла равнинная западная",
-      latinName: "Gorilla gorilla gorilla",
-      category: "mammals",
-      region: "africa",
-      status: "CR",
+      latinName: "Gorilla",
+      category: "Млекопитающие",
+      region: "Африка",
+      status: "На грани исчезновения",
       shortDescription:
         "Крупнейший примат Африки, обитающий в тропических лесах Центральной Африки, находящийся под критической угрозой исчезновения.",
       description:
@@ -1025,15 +1040,15 @@ async function fetchSpeciesData() {
         "images/western_gorilla2.jpg",
         "images/western_gorilla3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/western-gorilla-range.jpg",
     },
     {
       id: "32",
       name: "Энцефаляртос Вуда",
       latinName: "Encephalartos woodii",
-      category: "plants",
-      region: "africa",
-      status: "EN",
+      category: "Растения",
+      region: "Африка",
+      status: "Вымирающие",
       shortDescription:
         "Одно из самых редких растений на Земле, существующее только в виде мужских клонов в ботанических коллекциях.",
       description:
@@ -1059,15 +1074,15 @@ async function fetchSpeciesData() {
         "images/encephalartos_woodii2.jpg",
         "images/encephalartos_woodii3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/encephalartos-woodii-range.jpg",
     },
     {
       id: "33",
       name: "Баобаб Дьего",
       latinName: "Adansonia suarezensis",
-      category: "plants",
-      region: "africa",
-      status: "EN",
+      category: "Растения",
+      region: "Африка",
+      status: "Вымирающие",
       shortDescription:
         "Редкий вид баобаба с уникальной бутылочной формой ствола, эндемик северного Мадагаскара.",
       description:
@@ -1093,19 +1108,19 @@ async function fetchSpeciesData() {
         "images/diego_baobab2.jpg",
         "images/diego_baobab3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/diego-baobab-range.jpg",
     },
     {
       id: "34",
       name: "Вельвичия удивительная",
       latinName: "Welwitschia mirabilis",
-      category: "plants",
-      region: "africa",
-      status: "VU",
+      category: "Растения",
+      region: "Африка",
+      status: "Уязвимые",
       shortDescription:
         "Уникальное пустынное растение с двумя единственными листьями, растущими всю жизнь, эндемик пустыни Намиб.",
       description:
-        "Вельвичия удивительная - реликтовое голосеменное растение, единственный представитель своего семейства. Имеет короткий древесный ствол и всего два ремневидных листа, которые растут непрерывно в течение всей жизни растения (до 2000 лет). Листья могут достигать длины 4 метров, со временем расщепляясь на ленты. Произрастает в крайне засушливых условиях пустыни Намиб, получая влагу преимущественно из туманов. Раздельнополое растение с мужскими и женскими шишками.",
+        "Вельвичия удивительная - реликтовое голосеменное растение, единственный представитель своего семейства. Имеет короткий древесный ствол и всего два ремневидных листа, которые растут непрерывно в течение всей жизни Растения (до 2000 лет). Листья могут достигать длины 4 метров, со временем расщепляясь на ленты. Произрастает в крайне засушливых условиях пустыни Намиб, получая влагу преимущественно из туманов. Раздельнополое растение с мужскими и женскими шишками.",
       range: "Пустыня Намиб (Намибия, южная Ангола)",
       threats: [
         "Незаконный сбор коллекционерами",
@@ -1127,15 +1142,15 @@ async function fetchSpeciesData() {
         "images/welwitschia2.jpg",
         "images/welwitschia3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/welwitschia-range.jpg",
     },
     {
       id: "35",
       name: "Протея королевская",
       latinName: "Protea cynaroides",
-      category: "plants",
-      region: "africa",
-      status: "VU",
+      category: "Растения",
+      region: "Африка",
+      status: "Уязвимые",
       shortDescription:
         "Национальный цветок Южной Африки с крупными эффектными соцветиями, находящийся под угрозой из-за потери местообитаний.",
       description:
@@ -1143,7 +1158,7 @@ async function fetchSpeciesData() {
       range: "Южная Африка (Западный и Восточный Кейп)",
       threats: [
         "Расширение сельского хозяйства и виноделия",
-        "Инвазивные чужеродные растения (особенно австралийские акации)",
+        "Инвазивные чужеродные Растения (особенно австралийские акации)",
         "Изменение режима природных пожаров",
         "Сбор цветов для букетов",
         "Урбанизация прибрежных районов",
@@ -1161,15 +1176,15 @@ async function fetchSpeciesData() {
         "images/king_protea2.jpg",
         "images/king_protea3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/king-protea-range.jpg",
     },
     {
       id: "36",
       name: "Лиственница польская",
       latinName: "Larix decidua var. polonica",
-      category: "plants",
-      region: "europe",
-      status: "CR",
+      category: "Растения",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Редчайший эндемичный подвид лиственницы, сохранившийся лишь в нескольких местах Польши.",
       description:
@@ -1195,15 +1210,15 @@ async function fetchSpeciesData() {
         "images/polish_larch2.jpg",
         "images/polish_larch3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/polish-larch-range.jpg",
     },
     {
       id: "37",
       name: "Критский клён",
       latinName: "Acer creticum",
-      category: "plants",
-      region: "europe",
-      status: "CR",
+      category: "Растения",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Редкий эндемичный вид клёна, встречающийся только в горах Крита и находящийся на грани исчезновения.",
       description:
@@ -1230,15 +1245,15 @@ async function fetchSpeciesData() {
         "images/cretan_maple2.jpg",
         "images/cretan_maple3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/cretan-maple-range.jpg",
     },
     {
       id: "38",
       name: "Венерин башмачок настоящий",
       latinName: "Cypripedium calceolus",
-      category: "plants",
-      region: "europe",
-      status: "EN",
+      category: "Растения",
+      region: "Европа",
+      status: "Вымирающие",
       shortDescription:
         "Самая красивая дикая орхидея Европы с характерным цветком в форме башмачка, находящаяся под угрозой исчезновения.",
       description:
@@ -1265,15 +1280,15 @@ async function fetchSpeciesData() {
         "images/ladys_slipper2.jpg",
         "images/ladys_slipper3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/ladys-slipper-range.jpg",
     },
     {
       id: "39",
       name: "Эдельвейс альпийский",
       latinName: "Leontopodium alpinum",
-      category: "plants",
-      region: "europe",
-      status: "VU",
+      category: "Растения",
+      region: "Европа",
+      status: "Уязвимые",
       shortDescription:
         "Легендарный высокогорный цветок с серебристо-белыми звездообразными соцветиями, символ Альп и альпинизма.",
       description:
@@ -1300,15 +1315,15 @@ async function fetchSpeciesData() {
         "images/edelweiss2.jpg",
         "images/edelweiss3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/edelweiss-range.jpg",
     },
     {
       id: "40",
       name: "Пион тонколистный",
       latinName: "Paeonia tenuifolia",
-      category: "plants",
-      region: "europe",
-      status: "VU",
+      category: "Растения",
+      region: "Европа",
+      status: "Уязвимые",
       shortDescription:
         "Редкий степной пион с ажурной листвой и крупными ярко-красными цветами, символ степного разнотравья.",
       description:
@@ -1335,15 +1350,15 @@ async function fetchSpeciesData() {
         "images/fernleaf_peony2.jpg",
         "images/fernleaf_peony3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/fernleaf-peony-range.jpg",
     },
     {
       id: "41",
       name: "Кречётка",
       latinName: "Tetrax tetrax",
-      category: "birds",
-      region: "europe",
-      status: "CR",
+      category: "Птицы",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Степная птица семейства дрофиных с контрастным оперением, находящаяся на грани исчезновения из-за утраты местообитаний.",
       description:
@@ -1371,15 +1386,15 @@ async function fetchSpeciesData() {
         "images/little_bustard2.jpg",
         "images/little_bustard3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/little-bustard-range.jpg",
     },
     {
       id: "42",
       name: "Балобан",
       latinName: "Falco cherrug",
-      category: "birds",
-      region: "europe",
-      status: "CR",
+      category: "Птицы",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Крупный сокол с благородной внешностью, находящийся на грани исчезновения из-за нелегального отлова и утраты местообитаний.",
       description:
@@ -1407,15 +1422,15 @@ async function fetchSpeciesData() {
         "images/saker_falcon2.jpg",
         "images/saker_falcon3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/saker-falcon-range.jpg",
     },
     {
       id: "43",
       name: "Дальневосточный кроншнеп",
       latinName: "Numenius madagascariensis",
-      category: "birds",
-      region: "europe",
-      status: "EN",
+      category: "Птицы",
+      region: "Европа",
+      status: "Вымирающие",
       shortDescription:
         "Крупный кулик с самым длинным клювом среди птиц мира, находящийся под угрозой исчезновения из-за разрушения мест обитания.",
       description:
@@ -1443,15 +1458,15 @@ async function fetchSpeciesData() {
         "images/far_eastern_curlew2.jpg",
         "images/far_eastern_curlew3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/far-eastern-curlew-range.jpg",
     },
     {
       id: "44",
       name: "Скопа",
       latinName: "Pandion haliaetus",
-      category: "birds",
-      region: "europe",
-      status: "LC",
+      category: "Птицы",
+      region: "Европа",
+      status: "Вызывающие наименьшие опасения",
       shortDescription:
         "Крупный хищник-рыболов с уникальными адаптациями для охоты на рыбу, единственный представитель семейства скопиных.",
       description:
@@ -1479,15 +1494,15 @@ async function fetchSpeciesData() {
         "images/osprey2.jpg",
         "images/osprey3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/osprey-range.jpg",
     },
     {
       id: "45",
       name: "Нефритовая лоза",
       latinName: "Strongylodon macrobotrys",
-      category: "plants",
-      region: "asia",
-      status: "CR",
+      category: "Растения",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Редчайшая тропическая лиана с потрясающими бирюзовыми цветами, находящаяся на грани исчезновения в дикой природе.",
       description:
@@ -1513,15 +1528,15 @@ async function fetchSpeciesData() {
         "images/jade_vine2.jpg",
         "images/jade_vine3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/jade-vine-range.jpg",
     },
     {
       id: "46",
       name: "Рододендрон Нуталла",
       latinName: "Rhododendron nuttallii",
-      category: "plants",
-      region: "asia",
-      status: "CR",
+      category: "Растения",
+      region: "Азия",
+      status: "На грани исчезновения",
       shortDescription:
         "Редкий гималайский рододендрон с огромными ароматными цветами, находящийся на грани исчезновения.",
       description:
@@ -1548,15 +1563,15 @@ async function fetchSpeciesData() {
         "images/nuttall_rhododendron2.jpg",
         "images/nuttall_rhododendron3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/nuttall-rhododendron-range.jpg",
     },
     {
       id: "47",
       name: "Драконово дерево",
       latinName: "Dracaena cambodiana",
-      category: "plants",
-      region: "asia",
-      status: "EN",
+      category: "Растения",
+      region: "Азия",
+      status: "Вымирающие",
       shortDescription:
         "Древнее дерево с красным смолистым соком, известным как драконова кровь, находящееся под угрозой исчезновения.",
       description:
@@ -1582,15 +1597,15 @@ async function fetchSpeciesData() {
         "images/dragon_tree2.jpg",
         "images/dragon_tree3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/dragon-tree-range.jpg",
     },
     {
       id: "48",
       name: "Гималайский голубой мак",
       latinName: "Meconopsis betonicifolia",
-      category: "plants",
-      region: "asia",
-      status: "VU",
+      category: "Растения",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
         "Легендарный цветок высокогорий с небесно-голубыми лепестками, символ Гималаев.",
       description:
@@ -1617,17 +1632,17 @@ async function fetchSpeciesData() {
         "images/blue_poppy2.jpg",
         "images/blue_poppy3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/blue-poppy-tree-range.jpg",
     },
     {
       id: "49",
       name: "Азиатская венерина мухоловка",
       latinName: "Dionaea muscipula var. asiatica",
-      category: "plants",
-      region: "asia",
-      status: "VU",
+      category: "Растения",
+      region: "Азия",
+      status: "Уязвимые",
       shortDescription:
-        "Редкая хищная болотная трава с ловушками для насекомых, азиатский подвид знаменитого растения.",
+        "Редкая хищная болотная трава с ловушками для насекомых, азиатский подвид знаменитого Растения.",
       description:
         "Азиатская венерина мухоловка - многолетнее насекомоядное растение высотой 10-15 см. Имеет розетку из 4-7 листьев, каждый из которых заканчивается двустворчатой ловушкой с чувствительными волосками. Ловушки окрашены в красноватый цвет и выделяют сладкий нектар для привлечения добычи. Цветет белыми цветами на высоком цветоносе. Произрастает на бедных азотом болотах с кислой почвой. В отличие от американского вида, имеет более компактные ловушки и лучше приспособлена к сезонным наводнениям.",
       range:
@@ -1653,15 +1668,15 @@ async function fetchSpeciesData() {
         "images/asian_flytrap2.jpg",
         "images/asian_flytrap3.jpg",
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/asian-flytrap-range.jpg",
     },
     {
       id: "50",
       name: "Эскулапов полоз",
       latinName: "Zamenis longissimus",
-      category: "reptiles",
-      region: "europe",
-      status: "CR",
+      category: "Рептилии",
+      region: "Европа",
+      status: "На грани исчезновения",
       shortDescription:
         "Красивая неядовитая змея с бронзовым отливом, самая крупная рептилия Европы, находящаяся на грани исчезновения.",
       description:
@@ -1686,9 +1701,1003 @@ async function fetchSpeciesData() {
       images: [
         "images/aesculapian_snake1.jpg",
         "images/aesculapian_snake2.jpg",
-        "images/aesculapian_snake3.jpg",
+        "images/aesculapian_snake3.jpg"
       ],
-      rangeImage: "images/lotus-range.jpg",
+      rangeImage: "images/aesculapian-snake-range.jpg",
+    }, 
+  ];
+}
+
+async function fetchEcosystemsData() {
+  return [
+    {
+      id: "1",
+      name: "Амазонские тропические леса",
+      shortDescription:
+        "Крупнейший тропический лес в мире с невероятным биоразнообразием.",
+      description:
+        "Амазонские тропические леса занимают площадь около 5,5 млн км² и являются домом для 10% всех известных видов на Земле. Это важнейший регулятор глобального климата.",
+      type: "Тропический лес",
+      climates: ["Тропический", "Экваториальный"],
+      location:
+        "Южная Америка, охватывает Бразилию, Перу, Колумбию и другие страны",
+      climateDetails:
+        "Тропический влажный климат с обильными осадками круглый год. Среднегодовая температура +24-28°C, осадки 2000-5000 мм в год.",
+      images: ["images/amazon.jpg", "images/amazon2.jpg"],
+      locationImage: "images/amazon-map.jpg",
+      biodiversity: [
+        "Более 40000 видов растений",
+        "Около 1300 видов птиц",
+        "Более 400 видов млекопитающих",
+        "Около 3000 видов рыб",
+      ],
+      threats: [
+        "Вырубка лесов",
+        "Изменение климата",
+        "Незаконная добыча полезных ископаемых",
+        "Расширение сельскохозяйственных угодий",
+      ],
+      conservationMeasures: [
+        "Создание охраняемых территорий",
+        "Устойчивое лесопользование",
+        "Борьба с незаконной вырубкой",
+        "Экологическое просвещение",
+      ],
+    },
+    {
+      id: "2",
+      name: "Большой Барьерный риф",
+      shortDescription:
+        "Крупнейшая в мире система коралловых рифов у побережья Австралии.",
+      description:
+        "Большой Барьерный риф простирается на 2300 км и состоит из почти 3000 отдельных рифов и 900 островов. Это самая большая структура, созданная живыми организмами.",
+      type: "Коралловый риф",
+      climates: ["Тропический"],
+      location: "Коралловое море, у побережья Квинсленда, Австралия",
+      climateDetails:
+        "Тропический морской климат с температурой воды 24-29°C круглый год. Соленость воды около 35‰.",
+      images: ["images/reef.jpg", "images/reef2.jpg"],
+      locationImage: "images/reef-map.jpg",
+      biodiversity: [
+        "Более 1500 видов рыб",
+        "400 видов кораллов",
+        "4000 видов моллюсков",
+        "240 видов птиц",
+      ],
+      threats: [
+        "Повышение температуры воды (обесцвечивание кораллов)",
+        "Закисление океана",
+        "Загрязнение воды",
+        "Чрезмерный вылов рыбы",
+      ],
+      conservationMeasures: [
+        "Мониторинг состояния рифа",
+        "Ограничение рыболовства",
+        "Снижение загрязнения воды",
+        "Исследования по адаптации кораллов",
+      ],
+    },
+    {
+      id: "3",
+      name: "Мангровые заросли",
+      shortDescription:
+        "Уникальные прибрежные экосистемы на границе моря и суши в тропических широтах.",
+      description:
+        "Мангры представляют собой сообщества солеустойчивых деревьев и кустарников, произрастающих в зоне приливов и отливов. Они образуют плотные труднопроходимые заросли с характерными воздушными корнями.",
+      type: "Прибрежный лес",
+      climates: ["Тропический", "Субтропический"],
+      location:
+        "Дельта реки Меконг (Вьетнам), Сундарбан (Индия/Бангладеш), Эверглейдс (Флорида), Северное побережье Австралии",
+      climateDetails:
+        "Среднегодовая температура 20-28°C, соленость воды 10-35‰. Регулярные приливы-отливы (до 10 м амплитудой).",
+      images: ["images/mangrove.jpg", "images/mangrove2.jpg"],
+      locationImage: "images/mangrove-map.jpg",
+      biodiversity: [
+        "80 видов мангровых деревьев",
+        "220 видов рыб",
+        "150 видов крабов",
+        "120 видов птиц",
+        "Редкие виды: бенгальский тигр, иравадийский дельфин",
+      ],
+      threats: [
+        "Вырубка для создания креветочных ферм",
+        "Загрязнение нефтепродуктами",
+        "Урбанизация прибрежных зон",
+        "Изменение гидрологического режима",
+        "Повышение уровня моря",
+      ],
+      conservationMeasures: [
+        "Создание биосферных резерватов",
+        "Восстановление гидрологического режима",
+        "Экотуризм как альтернатива вырубке",
+        "Мониторинг состояния экосистемы",
+        "Программы по высадке мангров",
+      ],
+    },
+    {
+      id: "4",
+      name: "Экваториальные болота",
+      shortDescription:
+        "Обширные заболоченные территории в экваториальном поясе с уникальной водно-болотной растительностью.",
+      description:
+        "Экваториальные болота формируются в условиях постоянной высокой влажности и высоких температур. Они характеризуются сложной системой протоков, стариц и заболоченных участков, часто затопляемых в сезон дождей. Крупнейшие экваториальные болота находятся в бассейнах великих рек.",
+      type: "Водно-болотные угодья",
+      climates: ["Экваториальный"],
+      location:
+        "Болота Судд (Южный Судан), Пантанал (Бразилия), Бангорские болота (Центральная Африка)",
+      climateDetails:
+        "Среднегодовая температура 26-28°C, осадки 1500-3000 мм в год. Высокая влажность (80-95%) с незначительными сезонными колебаниями.",
+      images: ["images/swamp.jpg", "images/swamp2.jpg"],
+      locationImage: "images/swamp-map.jpg",
+      biodiversity: [
+        "Более 1000 видов водных растений",
+        "400 видов птиц",
+        "200 видов рыб",
+        "50 видов млекопитающих",
+        "Редкие виды: амазонский ламантин, анаконда, ябиру",
+      ],
+      threats: [
+        "Осушение для сельского хозяйства",
+        "Добыча нефти и полезных ископаемых",
+        "Загрязнение от промышленных стоков",
+        "Изменение гидрологического режима",
+        "Незаконная охота",
+      ],
+      conservationMeasures: [
+        "Придание статуса водно-болотных угодий международного значения (Рамсарские угодья)",
+        "Создание охраняемых природных территорий",
+        "Регулирование гидрорежима",
+        "Программы по восстановлению болот",
+        "Экологический мониторинг",
+      ],
+    },
+    {
+      id: "5",
+      name: "Саванны",
+      shortDescription:
+        "Обширные травянистые равнины с редкими деревьями, характерные для субэкваториального пояса.",
+      description:
+        "Саванны представляют собой переходную зону между тропическими лесами и пустынями. Для них характерно четкое разделение на сухой и влажный сезоны, что определяет уникальный состав флоры и фауны. Эти экосистемы занимают около 20% суши Земли.",
+      type: "Травянистая равнина",
+      climates: ["Субэкваториальный", "Тропический"],
+      location:
+        "Серенгети (Танзания/Кения), Льянос (Венесуэла), Кампос (Бразилия), Северная Австралия",
+      climateDetails:
+        "Среднегодовая температура 20-30°C. Ярко выражены два сезона: дождливый (3-8 месяцев) и сухой. Осадки 500-1500 мм в год.",
+      images: ["images/savanna.jpg", "images/savanna2.jpg"],
+      locationImage: "images/savanna-map.jpg",
+      biodiversity: [
+        "Более 40 видов копытных животных",
+        "Крупные хищники: львы, гепарды, гиены",
+        "500+ видов птиц",
+        "Многочисленные виды трав и злаков",
+        "Характерные деревья: баобабы, акации",
+      ],
+      threats: [
+        "Расширение сельскохозяйственных земель",
+        "Перевыпас скота",
+        "Браконьерство",
+        "Изменение климата (опустынивание)",
+        "Пожары",
+      ],
+      conservationMeasures: [
+        "Создание национальных парков (например, Серенгети)",
+        "Регулирование выпаса скота",
+        "Борьба с браконьерством",
+        "Программы по сохранению миграционных путей животных",
+        "Контроль за природными пожарами",
+      ],
+    },
+    {
+      id: "6",
+      name: "Листопадные муссонные леса",
+      shortDescription:
+        "Леса с выраженной сезонностью, сбрасывающие листву в сухой период, характерные для муссонных регионов.",
+      description:
+        "Листопадные муссонные леса формируются в условиях четкого чередования влажного и сухого сезонов. В период засухи деревья сбрасывают листву, чтобы уменьшить испарение влаги. Эти леса отличаются меньшим биоразнообразием, чем влажные тропические, но имеют уникальные адаптации к сезонным изменениям.",
+      type: "Сезонный тропический лес",
+      climates: ["Субэкваториальный", "Тропический"],
+      location:
+        "Юго-Восточная Азия (Таиланд, Камбоджа, Мьянма), Восточная Индия, Северная Австралия, Центральная Америка",
+      climateDetails:
+        "Ярко выражены два сезона: дождливый (4-8 месяцев) и сухой. Среднегодовая температура 25-28°C. Осадки 1000-2000 мм в год, с резким перепадом между сезонами.",
+      images: ["images/monsoon-forest.jpg", "images/monsoon-forest2.jpg"],
+      locationImage: "images/monsoon-forest-map.jpg",
+      biodiversity: [
+        "Тиковые, саловые и красные деревья",
+        "Более 200 видов птиц",
+        "Крупные Млекопитающие: азиатские слоны, тигры, леопарды",
+        "Многочисленные виды рептилий и земноводных",
+        "Эндемичные виды насекомых",
+      ],
+      threats: [
+        "Массовая вырубка ценных пород деревьев",
+        "Расширение сельскохозяйственных угодий",
+        "Изменение режима муссонов из-за климатических изменений",
+        "Браконьерство",
+        "Фрагментация лесных массивов",
+      ],
+      conservationMeasures: [
+        "Устойчивое лесопользование",
+        "Создание сезонных заповедников",
+        "Восстановление нарушенных территорий",
+        "Мониторинг состояния лесных экосистем",
+        "Программы по сохранению ключевых видов",
+      ],
+    },
+    {
+      id: "7",
+      name: "Галерейные леса",
+      shortDescription:
+        "Узкие полосы леса, тянущиеся вдоль рек через открытые ландшафты саванн и степей.",
+      description:
+        "Галерейные леса образуют естественные зеленые коридоры вдоль водных артерий в безлесных или малолесистых регионах. Они служат важными экологическими коридорами для миграции животных и сохраняют повышенное биоразнообразие по сравнению с окружающими территориями. Название происходит от их сходства с растительными галереями.",
+      type: "Рипарийный лес (пойменный)",
+      climates: ["Субэкваториальный", "Тропический", "Умеренный"],
+      location:
+        "Африканские саванны (бассейн Конго), Южная Америка (Льянос), Северная Австралия, Северная Америка (прерии)",
+      climateDetails:
+        "Климат зависит от окружающего региона, но всегда с достаточным увлажнением вдоль рек. Среднегодовая температура 20-28°C. Годовое количество осадков варьирует от 500 мм в засушливых регионах до 1500 мм во влажных.",
+      images: ["images/gallery-forest.jpg", "images/gallery-forest2.jpg"],
+      locationImage: "images/gallery-forest-map.jpg",
+      biodiversity: [
+        "Водолюбивые деревья: ивы, тополя, пальмы",
+        "Более 150 видов птиц на отдельных участках",
+        "Обитатели: обезьяны, речные выдры, капибары",
+        "Многочисленные виды земноводных и рептилий",
+        "Редкие виды: речные дельфины, карликовые бегемоты",
+      ],
+      threats: [
+        "Вырубка деревьев для расчистки земель",
+        "Изменение гидрологического режима рек",
+        "Загрязнение водных источников",
+        "Перевыпас скота в поймах",
+        "Строительство плотин и водозаборов",
+      ],
+      conservationMeasures: [
+        "Защита речных экосистем",
+        "Создание буферных зон вдоль водотоков",
+        "Восстановление естественной растительности",
+        "Регулирование хозяйственной деятельности в поймах",
+        "Мониторинг состояния ключевых видов",
+      ],
+    },
+    {
+      id: "8",
+      name: "Тропические пустыни",
+      shortDescription:
+        "Экстремально засушливые регионы с минимальным количеством осадков и высокими дневными температурами.",
+      description:
+        "Тропические пустыни занимают около 20% поверхности суши и характеризуются крайне скудной растительностью и специфической фауной, адаптированной к экстремальным условиям. Эти экосистемы отличаются резкими суточными перепадами температур и длительными периодами засухи.",
+      type: "Пустыня",
+      climates: ["Тропический"],
+      location:
+        "Сахара (Африка), Аравийская пустыня, Пустыня Тар (Индия/Пакистан), Большая Песчаная пустыня (Австралия)",
+      climateDetails:
+        "Среднегодовая температура 25-40°C (дневные максимумы до 58°C). Осадки менее 250 мм в год, в некоторых районах - менее 50 мм. Высокая испаряемость (до 3000 мм/год).",
+      images: ["images/tropical-desert.jpg", "images/tropical-desert2.jpg"],
+      locationImage: "images/tropical-desert-map.jpg",
+      biodiversity: [
+        "Ксерофитные Растения: кактусы, акации, суккуленты",
+        "Рептилии: ящерицы, змеи (рогатые гадюки, вараны)",
+        "Пустынные Млекопитающие: фенеки, тушканчики, аддаксы",
+        "Членистоногие: скорпионы, жуки-чернотелки",
+        "Ночные и сумеречные виды животных",
+      ],
+      threats: [
+        "Опустынивание из-за климатических изменений",
+        "Чрезмерный выпас скота",
+        "Добыча полезных ископаемых",
+        "Неустойчивое водопользование",
+        "Разрушение местообитаний из-за туризма",
+      ],
+      conservationMeasures: [
+        "Создание пустынных заповедников",
+        "Борьба с опустыниванием",
+        "Рациональное использование подземных вод",
+        "Восстановление традиционных систем водопользования",
+        "Мониторинг состояния уязвимых видов",
+      ],
+    },
+    {
+      id: "9",
+      name: "Тропические редколесья",
+      shortDescription:
+        "Переходные экосистемы между тропическими лесами и саваннами с разреженным древесным покровом.",
+      description:
+        "Тропические редколесья характеризуются низкой плотностью деревьев (10-40% покрытия) и богатым травянистым покровом. Они занимают промежуточное положение между влажными лесами и открытыми саваннами, формируясь в условиях сезонного климата с выраженным сухим периодом. Эти экосистемы особенно распространены в Южной Америке, Африке и Северной Австралии.",
+      type: "Редколесье",
+      climates: ["Тропический", "Субэкваториальный"],
+      location:
+        "Каатинга (Бразилия), Миомбо (Южная Африка), Чако (Парагвай/Аргентина), Северные территории Австралии",
+      climateDetails:
+        "Среднегодовая температура 22-28°C. Осадки 600-1500 мм в год с продолжительным сухим сезоном (4-8 месяцев). Частые засухи и пожары в сухой период.",
+      images: ["images/tropical-woodland.jpg", "images/tropical-woodland2.jpg"],
+      locationImage: "images/tropical-woodland-map.jpg",
+      biodiversity: [
+        "Засухоустойчивые деревья: бразильский орех, квебрахо, баобабы",
+        "Более 300 видов птиц в отдельных регионах",
+        "Крупные травоядные: тапиры, олени, пекари",
+        "Эндемичные виды рептилий и насекомых",
+        "Разнообразные виды трав и кустарников",
+      ],
+      threats: [
+        "Расширение сельскохозяйственных земель",
+        "Неумеренная вырубка деревьев на дрова",
+        "Изменение режима пожаров",
+        "Изменение климата (увеличение засушливости)",
+        "Фрагментация местообитаний",
+      ],
+      conservationMeasures: [
+        "Устойчивое лесопользование",
+        "Контролируемое выжигание для профилактики пожаров",
+        "Создание экологических коридоров",
+        "Восстановление деградированных земель",
+        "Программы по сохранению ключевых видов",
+      ],
+    },
+    {
+      id: "10",
+      name: "Средиземноморские жестколистные леса",
+      shortDescription:
+        "Характерные леса средиземноморского климата с вечнозелеными жестколистными деревьями и кустарниками.",
+      description:
+        "Средиземноморские жестколистные леса, также известные как склерофильные леса, сформировались в условиях средиземноморского климата с жарким сухим летом и мягкой влажной зимой. Для этих экосистем характерны деревья и кустарники с жесткими кожистыми листьями, часто покрытыми восковым налетом для уменьшения испарения. Эти леса являются частью биома, известного как средиземноморские леса, редколесья и кустарники.",
+      type: "Жестколистный лес",
+      climates: ["Субтропический"],
+      location:
+        "Средиземноморский бассейн (Испания, Италия, Греция), Калифорния (США), Центральное Чили, Юго-Западная Австралия, Капская область (ЮАР)",
+      climateDetails:
+        "Среднегодовая температура 12-20°C. Летние температуры могут достигать 30-40°C. Осадки 500-1000 мм в год, преимущественно зимой. Летом часто бывают засухи продолжительностью 3-5 месяцев.",
+      images: [
+        "images/mediterranean-forest.jpg",
+        "images/mediterranean-forest2.jpg",
+      ],
+      locationImage: "images/mediterranean-forest-map.jpg",
+      biodiversity: [
+        "Характерные деревья: пробковый дуб, каменный дуб, олива европейская",
+        "Кустарники: ладанник, мирт, земляничное дерево",
+        "Эндемичные виды: иберийская рысь, цинния калифорнийская",
+        "Более 200 видов птиц в отдельных регионах",
+        "Высокое разнообразие насекомых и рептилий",
+      ],
+      threats: [
+        "Лесные пожары (естественные и антропогенные)",
+        "Расширение сельскохозяйственных земель",
+        "Урбанизация прибрежных зон",
+        "Чрезмерный выпас скота",
+        "Изменение климата (увеличение засушливости)",
+      ],
+      conservationMeasures: [
+        "Контролируемое выжигание для профилактики пожаров",
+        "Создание средиземноморских заповедников",
+        "Восстановление деградированных лесов",
+        "Программы по сохранению эндемичных видов",
+        "Устойчивое управление лесными ресурсами",
+      ],
+    },
+    {
+      id: "11",
+      name: "Субтропические пустыни",
+      shortDescription:
+        "Аридные зоны с экстремальными температурными колебаниями, расположенные в субтропических широтах.",
+      description:
+        "Субтропические пустыни формируются в зонах постоянных антициклонов, где преобладает нисходящее движение воздуха. Эти экосистемы отличаются от тропических пустынь более выраженными сезонными колебаниями температур и несколько большим количеством осадков. Характерной особенностью является наличие эфемерной растительности, оживающей после редких дождей.",
+      type: "Пустыня",
+      climates: ["Субтропический"],
+      location:
+        "Пустыня Сонора (США/Мексика), Калахари (Южная Африка), Сирийская пустыня (Ближний Восток), Пустыня Атакама (Южная Америка), Гибсон (Австралия)",
+      climateDetails:
+        "Летние температуры 35-45°C, зимние 5-15°C. Годовые осадки 50-250 мм, распределены неравномерно. Характерны резкие суточные перепады температур (до 30°C).",
+      images: [
+        "images/subtropical-desert.jpg",
+        "images/subtropical-desert2.jpg",
+      ],
+      locationImage: "images/subtropical-desert-map.jpg",
+      biodiversity: [
+        "Сукуленты: кактусы сагуаро, агавы",
+        "Ксерофитные кустарники: креозотовый куст, полынь",
+        "Рептилии: гремучие змеи, ящерицы-ядозубы",
+        "Млекопитающие: койоты, калифорнийские зайцы",
+        "Эфемерные Растения, цветущие после дождей",
+      ],
+      threats: [
+        "Неустойчивое водопользование",
+        "Развитие горнодобывающей промышленности",
+        "Урбанизация и строительство дорог",
+        "Инвазивные виды растений",
+        "Изменение климата (усиление засушливости)",
+      ],
+      conservationMeasures: [
+        "Создание пустынных заповедников",
+        "Рациональное использование подземных вод",
+        "Контроль за инвазивными видами",
+        "Восстановление нарушенных земель",
+        "Экотуризм как альтернатива промышленному освоению",
+      ],
+    },
+    {
+      id: "12",
+      name: "Субтропические степи",
+      shortDescription:
+        "Обширные травянистые равнины субтропического пояса с умеренным увлажнением и выраженной сезонностью.",
+      description:
+        "Субтропические степи, известные в разных регионах как прерии, пампасы или вельды, представляют собой травянистые экосистемы с редкими древесными насаждениями. Они формируются в условиях недостаточного увлажнения для роста лесов, но достаточного для развития густого травяного покрова. Эти экосистемы играют ключевую роль в поддержании почвенного плодородия и являются важными пастбищными угодьями.",
+      type: "Степь",
+      climates: ["Субтропический", "Умеренно-континентальный"],
+      location:
+        "Пампасы (Аргентина), Прерии (юг США), Вельд (Южная Африка), Степи Центральной Азии",
+      climateDetails:
+        "Среднегодовая температура 10-20°C. Летние температуры 25-35°C, зимние - от -5°C до +10°C. Осадки 400-800 мм в год, преимущественно весной и осенью. Характерны периодические засухи.",
+      images: [
+        "images/subtropical-steppe.jpg",
+        "images/subtropical-steppe2.jpg",
+      ],
+      locationImage: "images/subtropical-steppe-map.jpg",
+      biodiversity: [
+        "Злаковые травы: ковыль, бизонова трава, пампасская трава",
+        "Бобовые Растения: люцерна, клевер",
+        "Копытные: бизоны, викуньи, антилопы",
+        "Грызуны: луговые собачки, вискачи",
+        "Хищники: пампасские лисы, гривистые волки",
+      ],
+      threats: [
+        "Распашка под сельхозугодья",
+        "Перевыпас скота",
+        "ИнвАзия чужеродных видов растений",
+        "Урбанизация и фрагментация ландшафтов",
+        "Изменение климата (опустынивание)",
+      ],
+      conservationMeasures: [
+        "Создание степных заповедников",
+        "Внедрение устойчивых методов выпаса",
+        "Восстановление естественного травяного покрова",
+        "Борьба с инвазивными видами",
+        "Сохранение традиционных пастбищных систем",
+      ],
+    },
+    {
+      id: "13",
+      name: "Широколиственные леса",
+      shortDescription:
+        "Леса умеренного пояса, состоящие преимущественно из листопадных пород деревьев с широкой листовой пластиной.",
+      description:
+        "Широколиственные леса характеризуются выраженной сезонностью с четким чередованием вегетационного периода и зимнего покоя. Эти леса образуют один из самых богатых и продуктивных биомов умеренного пояса, отличаясь высоким видовым разнообразием и сложной ярусной структурой. В осенний период они демонстрируют яркую цветовую палитру листопада.",
+      type: "Листопадный лес",
+      climates: ["Умеренный"],
+      location:
+        "Восточная Северная Америка, Западная и Центральная Европа, Восточная Азия (Китай, Япония, Корея), Кавказ",
+      climateDetails:
+        "Среднегодовая температура 5-15°C. Летние температуры 20-30°C, зимние от -10°C до +5°C. Осадки 600-1500 мм в год, равномерно распределены по сезонам. Выражены четыре времени года.",
+      images: ["images/broadleaf-forest.jpg", "images/broadleaf-forest2.jpg"],
+      locationImage: "images/broadleaf-forest-map.jpg",
+      biodiversity: [
+        "Доминирующие деревья: дуб, бук, клен, липа, ясень",
+        "Подлесок: лещина, бересклет, жимолость",
+        "Травяной покров: пролесник, копытень, ветреница",
+        "Млекопитающие: олени, кабаны, лисы, белки",
+        "Птицы: дятлы, дрозды, совы, соловьи",
+      ],
+      threats: [
+        "Вырубка лесов для сельского хозяйства",
+        "Урбанизация и фрагментация лесных массивов",
+        "Загрязнение воздуха и почв",
+        "Инвазивные виды растений и животных",
+        "Изменение климата (сдвиг сезонов)",
+      ],
+      conservationMeasures: [
+        "Создание национальных парков и заповедников",
+        "Устойчивое лесопользование",
+        "Восстановление коренных лесных сообществ",
+        "Мониторинг состояния лесных экосистем",
+        "Программы по сохранению редких видов",
+      ],
+    },
+    {
+      id: "14",
+      name: "Тайга",
+      shortDescription:
+        "Крупнейший наземный биом, состоящий из хвойных лесов северного полушария.",
+      description:
+        "Тайга, или бореальные леса, представляет собой обширные хвойные леса, простирающиеся через Северную Америку и Евразию. Это самая большая наземная экосистема, играющая ключевую роль в глобальном углеродном цикле. Тайга характеризуется долгими холодными зимами и коротким прохладным летом, с преобладанием вечнозеленых хвойных деревьев, адаптированных к суровым условиям.",
+      type: "Хвойный лес",
+      climates: ["Субарктический", "Умеренный"],
+      location:
+        "Северная Канада и Аляска, Скандинавия, Северная Россия, Северная Монголия",
+      climateDetails:
+        "Среднегодовая температура от -5°C до +5°C. Зимние температуры могут опускаться ниже -50°C, летние редко превышают +20°C. Осадки 300-900 мм в год, преимущественно летом. Вегетационный период 3-5 месяцев.",
+      images: ["images/taiga.jpg", "images/taiga2.jpg"],
+      locationImage: "images/taiga-map.jpg",
+      biodiversity: [
+        "Хвойные деревья: ель, сосна, пихта, лиственница",
+        "Лиственные деревья: береза, осина (на южных границах)",
+        "Крупные Млекопитающие: лось, бурый медведь, волк, рысь",
+        "Мелкие животные: соболь, белка, заяц-беляк",
+        "Птицы: глухарь, рябчик, клесты, совы",
+      ],
+      threats: [
+        "Вырубка лесов",
+        "Добыча нефти и газа",
+        "Изменение климата (таяние вечной мерзлоты)",
+        "Лесные пожары",
+        "Кислотные дожди",
+      ],
+      conservationMeasures: [
+        "Создание охраняемых территорий",
+        "Устойчивое лесопользование",
+        "Мониторинг состояния вечной мерзлоты",
+        "Борьба с незаконными рубками",
+        "Программы восстановления лесов",
+      ],
+    },
+    {
+      id: "15",
+      name: "Степи",
+      shortDescription:
+        "Обширные безлесные пространства умеренного пояса с преобладанием травянистой растительности.",
+      description:
+        "Степи представляют собой один из самых продуктивных наземных биомов, где доминируют злаковые травы и разнотравье. Эти экосистемы формируются в условиях континентального климата с недостаточным увлажнением для роста лесов. Степи играют важную роль как природные пастбища и обладают уникальным почвенным покровом - черноземами, самыми плодородными почвами мира.",
+      type: "Травянистая равнина",
+      climates: ["Умеренный", "Субтропический"],
+      location:
+        "Евразийская степь (Украина, Россия, Казахстан), Североамериканские прерии, Пампасы (Аргентина), Венгерская пуста",
+      climateDetails:
+        "Среднегодовая температура 3-12°C. Летние температуры 20-40°C, зимние от -20°C до +5°C. Осадки 250-500 мм в год, с выраженным летним максимумом. Характерны сильные ветры и периодические засухи.",
+      images: ["images/steppe.jpg", "images/steppe2.jpg"],
+      locationImage: "images/steppe-map.jpg",
+      biodiversity: [
+        "Злаки: ковыль, типчак, мятлик",
+        "Разнотравье: шалфей, полынь, ирисы",
+        "Грызуны: суслики, тушканчики, хомяки",
+        "Копытные: сайгаки, джейраны, бизоны",
+        "Хищники: степные волки, лисы, хорьки",
+        "Птицы: дрофы, стрепеты, жаворонки",
+      ],
+      threats: [
+        "Распашка под сельхозугодья",
+        "Перевыпас скота",
+        "Опустынивание",
+        "Добыча полезных ископаемых",
+        "Фрагментация местообитаний",
+      ],
+      conservationMeasures: [
+        "Создание степных заповедников",
+        "Восстановление естественного травяного покрова",
+        "Устойчивое землепользование",
+        "Сохранение черноземов",
+        "Программы по восстановлению популяций копытных",
+      ],
+    },
+    {
+      id: "16",
+      name: "Тундра",
+      shortDescription:
+        "Безлесная арктическая экосистема с вечной мерзлотой, характеризующаяся экстремальными климатическими условиями.",
+      description:
+        "Тундра представляет собой уникальную экосистему, где низкие температуры и короткий вегетационный период ограничивают рост деревьев. Эта хрупкая среда отличается наличием вечной мерзлоты, которая находится всего в нескольких сантиметрах от поверхности летом. Тундра играет критически важную роль в глобальном климате, храня огромные запасы углерода в мерзлых почвах.",
+      type: "Арктическая равнина",
+      climates: ["Арктический", "Субарктический"],
+      location:
+        "Северные побережья Евразии и Северной Америки, Гренландия, арктические острова",
+      climateDetails:
+        "Среднегодовая температура ниже 0°C. Летние температуры 3-12°C, зимние могут опускаться ниже -50°C. Осадки 150-250 мм в год, преимущественно в виде снега. Вегетационный период всего 50-60 дней.",
+      images: ["images/tundra.jpg", "images/tundra2.jpg"],
+      locationImage: "images/tundra-map.jpg",
+      biodiversity: [
+        "Растения: мхи, лишайники, карликовые ивы и березы",
+        "Травы: пушица, осока, полярные маки",
+        "Млекопитающие: северные олени, овцебыки, песцы, лемминги",
+        "Птицы: белые совы, полярные крачки, пуночки",
+        "Насекомые: комары, мошки (массово в короткое лето)",
+      ],
+      threats: [
+        "Изменение климата (таяние вечной мерзлоты)",
+        "Добыча нефти и газа",
+        "Загрязнение от промышленной деятельности",
+        "Перевыпас домашних оленей",
+        "Нарушение почвенного покрова",
+      ],
+      conservationMeasures: [
+        "Создание арктических заповедников",
+        "Мониторинг состояния вечной мерзлоты",
+        "Ограничение промышленного освоения",
+        "Контроль за оленеводством",
+        "Исследования адаптации экосистем к изменениям климата",
+      ],
+    },
+    {
+      id: "17",
+      name: "Лесотундра",
+      shortDescription:
+        "Переходная зона между тайгой и тундрой, сочетающая островки леса с тундровой растительностью.",
+      description:
+        "Лесотундра представляет собой уникальную экотону между двумя крупнейшими биомами планеты - тайгой и тундрой. Для этой зоны характерно мозаичное сочетание низкорослых лесов, тундровых сообществ и болот. Лесотундра служит важным буфером, смягчающим взаимодействие между арктическими и бореальными экосистемами, и является критически важным ареалом для многих мигрирующих видов.",
+      type: "Переходная экосистема",
+      climates: ["Субарктический"],
+      location:
+        "Северная Канада, Аляска, север Европы и Азии (Россия), юг Гренландии",
+      climateDetails:
+        "Среднегодовая температура от -12°C до -2°C. Летние температуры 5-14°C, зимние могут опускаться ниже -40°C. Осадки 200-400 мм в год. Вегетационный период 70-100 дней. Вечная мерзлота прерывистая.",
+      images: ["images/forest-tundra.jpg", "images/forest-tundra2.jpg"],
+      locationImage: "images/forest-tundra-map.jpg",
+      biodiversity: [
+        "Деревья: карликовые березы, ивы, ели, лиственницы",
+        "Кустарники: багульник, голубика, морошка",
+        "Травы: осоки, пушица, полярные маки",
+        "Млекопитающие: северные олени, лемминги, песцы, волки",
+        "Птицы: белые куропатки, гагары, полярные совы",
+        "Насекомые: комары, мошки (в большом количестве летом)",
+      ],
+      threats: [
+        "Изменение климата (сдвиг границы тайги на север)",
+        "Разрушение почвенного покрова техникой",
+        "Загрязнение от добывающей промышленности",
+        "Перевыпас домашних оленей",
+        "Лесные пожары (учащаются с потеплением)",
+      ],
+      conservationMeasures: [
+        "Мониторинг смещения границ биомов",
+        "Создание охраняемых переходных зон",
+        "Регулирование промышленного освоения",
+        "Контроль за оленеводческой деятельностью",
+        "Изучение адаптационных механизмов видов",
+      ],
+    },
+    {
+      id: "18",
+      name: "Арктические пустыни",
+      shortDescription:
+        "Экстремально холодные безжизненные ландшафты в высоких арктических широтах с минимальным растительным покровом.",
+      description:
+        "Арктические пустыни представляют собой наиболее суровые наземные экосистемы планеты, где условия приближаются к пределу выживания для большинства организмов. Эти территории характеризуются практически полным отсутствием почвенного покрова, круглогодичными отрицательными температурами на глубине и обширными ледниковыми щитами. Несмотря на кажущуюся безжизненность, здесь существуют уникальные адаптированные сообщества организмов.",
+      type: "Полярная пустыня",
+      climates: ["Арктический"],
+      location:
+        "Север Гренландии, Канадский Арктический архипелаг, Северный остров Новой Земли, Земля Франца-Иосифа, Северная Земля",
+      climateDetails:
+        "Среднегодовая температура ниже -15°C. Летние температуры редко превышают +5°C, зимние опускаются до -50°C и ниже. Осадки менее 100-200 мм в год, преимущественно в виде снега. Постоянный ледяной покров.",
+      images: ["images/arctic-desert.jpg", "images/arctic-desert2.jpg"],
+      locationImage: "images/arctic-desert-map.jpg",
+      biodiversity: [
+        "Растения: мхи, лишайники (менее 5% покрытия)",
+        "Микроорганизмы: криофильные бактерии и водоросли",
+        "Птицы: белые чайки, полярные крачки (только летом)",
+        "Млекопитающие: белые медведи, песцы (редко)",
+        "Членистоногие: ногохвостки, клещи (в микрооазисах)",
+      ],
+      threats: [
+        "Изменение климата (таяние ледников)",
+        "Загрязнение от глобального переноса веществ",
+        "Разведка и добыча полезных ископаемых",
+        "Нарушение хрупких экосистем туристами",
+        "Сокращение ледового покрова",
+      ],
+      conservationMeasures: [
+        "Создание арктических заповедников",
+        "Мониторинг состояния ледников",
+        "Ограничение хозяйственной деятельности",
+        "Контроль за туристическими потоками",
+        "Исследования криоэкосистем",
+      ],
+    },
+    {
+      id: "19",
+      name: "Антарктические оазисы",
+      shortDescription:
+        "Уникальные свободные ото льда участки в Антарктиде, где развиваются особые экосистемы.",
+      description:
+        "Антарктические оазисы представляют собой редкие участки антарктического континента, свободные ото льда благодаря особым микроклиматическим и геологическим условиям. Эти территории, составляющие менее 0.5% площади Антарктиды, являются важнейшими центрами биологического разнообрАзия в полярной пустыне. Они образуются благодаря сочетанию сухих ветров, геотермальной активности и особым формам рельефа, препятствующим накоплению снега.",
+      type: "Полярный оазис",
+      climates: ["Антарктический"],
+      location:
+        "Сухие долины Мак-Мердо (Земля Виктория), Оазис Бангера (Берег Нокса), Оазис Ширмахера (Земля Королевы Мод)",
+      climateDetails:
+        "Среднегодовая температура от -20°C до -30°C. Летние температуры могут достигать +5°C, зимние опускаются до -60°C. Осадки менее 100 мм в год. Низкая влажность и сильные катабатические ветра (до 320 км/ч).",
+      images: [
+        "images/aБлизки к уязвимому положениюarctic-oasis.jpg",
+        "images/aБлизки к уязвимому положениюarctic-oasis2.jpg",
+      ],
+      locationImage: "images/aБлизки к уязвимому положениюarctic-oasis-map.jpg",
+      biodiversity: [
+        "Микроорганизмы: эндолитические водоросли и бактерии",
+        "Лишайники: около 20 видов",
+        "Нематоды: единственные наземные многоклеточные животные",
+        "Птицы: поморники, пингвины (на периферии оазисов)",
+        "Микрогрибы: экстремофильные виды",
+      ],
+      threats: [
+        "Изменение климата (нарушение хрупкого баланса)",
+        "Загрязнение от научных станций",
+        "Внесение чужеродных видов",
+        "Нарушение почвенного покрова",
+        "Чрезмерный научный туризм",
+      ],
+      conservationMeasures: [
+        "Строгий контроль доступа по Договору об Антарктике",
+        "Программы биологического мониторинга",
+        "Очистка антропогенных загрязнений",
+        "Карантинные меры для оборудования",
+        "Исследования уникальных экстремофилов",
+      ],
+    },
+    {
+      id: "20",
+      name: "Морские льды",
+      shortDescription:
+        "Динамические ледовые экосистемы полярных регионов, формирующиеся на поверхности океана.",
+      description:
+        "Морские льды представляют собой уникальную временную экосистему, которая образуется зимой и тает летом в полярных морях. Эти ледовые массивы служат критически важной средой обитания для множества специализированных организмов, формируя сложную пищевую цепь от микроскопических водорослей до крупных млекопитающих. Морской лед играет ключевую роль в глобальном климате, отражая солнечное излучение и участвуя в океанической циркуляции.",
+      type: "Ледовая экосистема",
+      climates: ["Арктический", "Антарктический"],
+      location:
+        "Северный Ледовитый океан, море Росса (Антарктика), море Уэдделла (Антарктика), Берингово море",
+      climateDetails:
+        "Температура поверхности от -50°C зимой до 0°C летом. Сезонные колебания площади льда от 4 млн км² (летом) до 15 млн км² (зимой) в Арктике. Толщина льда от 1-3 м (однолетний лед) до 5-10 м (многолетние паковые льды).",
+      images: ["images/sea-ice.jpg", "images/sea-ice2.jpg"],
+      locationImage: "images/sea-ice-map.jpg",
+      biodiversity: [
+        "Ледовые водоросли: диатомеи и криофильные цианобактерии",
+        "Ракообразные: ледяные амфиподы, криль",
+        "Рыбы: полярная треска, сайка",
+        "Млекопитающие: тюлени (нерпа, морской заяц), белые медведи (Арктика)",
+        "Птицы: пингвины (Антарктика), люрики (Арктика)",
+      ],
+      threats: [
+        "Глобальное потепление (сокращение площади и толщины льда)",
+        "Загрязнение нефтепродуктами",
+        "Океанское подкисление",
+        "Увеличение судоходства в полярных водах",
+        "Перелов рыбы в подледных экосистемах",
+      ],
+      conservationMeasures: [
+        "Мониторинг состояния морских льдов",
+        "Ограничение судоходства в уязвимых районах",
+        "Программы по изучению ледовых экосистем",
+        "Создание морских охраняемых территорий",
+        "Регулирование рыболовства в полярных водах",
+      ],
+    },
+  ];
+}
+
+async function fetchQuizQuestions() {
+  return [
+    {
+      question: "Какая экосистема является самой большой в мире?",
+      options: [
+        "Амазонские тропические леса",
+        "Сибирская тайга",
+        "Африканская саванна",
+        "Большой Барьерный риф",
+      ],
+      answer: 0,
+    },
+    {
+      question: "Какой процент поверхности Земли покрыт водой?",
+      options: ["50%", "71%", "65%", "80%"],
+      answer: 1,
+    },
+    {
+      question: "Какое животное является символом сохранения исчезающих видов?",
+      options: [
+        "Амурский тигр",
+        "Большая панда",
+        "Горная горилла",
+        "Полярный медведь",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Как называется процесс, когда Растения используют солнечный свет для создания пищи?",
+      options: ["Дыхание", "Фотосинтез", "Транспирация", "Окисление"],
+      answer: 1,
+    },
+    {
+      question:
+        "Какая из этих стран производит больше всего кислорода на планете?",
+      options: ["США", "Китай", "Россия", "Бразилия"],
+      answer: 3,
+    },
+    {
+      question:
+        "Какой газ является основным виновником глобального потепления?",
+      options: ["Кислород", "Азот", "Углекислый газ", "Водород"],
+      answer: 2,
+    },
+    {
+      question: "Какое из этих растений является самым высоким в мире?",
+      options: ["Секвойя", "Эвкалипт", "Баобаб", "Дуб"],
+      answer: 0,
+    },
+    {
+      question: "Какой процент видов на Земле составляют насекомые?",
+      options: ["Около 10%", "Около 30%", "Около 50%", "Около 70%"],
+      answer: 3,
+    },
+    {
+      question: "Какое из этих животных не является млекопитающим?",
+      options: ["Кит", "Дельфин", "Пингвин", "Летучая мышь"],
+      answer: 2,
+    },
+    {
+      question: "Какой океан является самым большим по площади?",
+      options: ["Атлантический", "Индийский", "Северный Ледовитый", "Тихий"],
+      answer: 3,
+    },
+    {
+      question: "Какое из этих веществ разлагается в природе дольше всего?",
+      options: [
+        "Бумага",
+        "Пластиковая бутылка",
+        "Апельсиновая кожура",
+        "Деревянная палочка",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Какой процент пресной воды на Земле доступен для использования человеком?",
+      options: ["Около 1%", "Около 10%", "Около 25%", "Около 50%"],
+      answer: 0,
+    },
+    {
+      question: "Какой статус сохранности у Амурского тигра?",
+      options: [
+        "Вызывающий наименьшие опасения",
+        "Уязвимый",
+        "Находящийся под угрозой исчезновения",
+        "Находящийся на грани исчезновения",
+      ],
+      answer: 2,
+    },
+    {
+      question: "Где обитает Лотос Комарова?",
+      options: [
+        "Южная Америка",
+        "Африка",
+        "Дальний Восток России",
+        "Австралия",
+      ],
+      answer: 2,
+    },
+    {
+      question: "Какая основная угроза для Суматранского носорога?",
+      options: [
+        "Загрязнение водоемов",
+        "Браконьерство ради рога",
+        "Изменение климата",
+        "Инвазивные виды",
+      ],
+      answer: 1,
+    },
+    {
+      question: "Какой регион является ареалом обитания Снежного барса?",
+      options: ["Гималаи и Тибет", "Сахара", "Амазонские леса", "Антарктида"],
+      answer: 0,
+    },
+    {
+      question: "Какое растение известно как призрак гор?",
+      options: [
+        "Лотос Комарова",
+        "Снежный барс",
+        "Эдельвейс альпийский",
+        "Вельвичия удивительная",
+      ],
+      answer: 2,
+    },
+    {
+      question: "Какое животное является самым быстрым наземным млекопитающим?",
+      options: ["Гепард", "Амурский тигр", "Сайгак", "Пиренейская рысь"],
+      answer: 0,
+    },
+    {
+      question: "Какое растение называют драконовой кровью?",
+      options: [
+        "Драцена",
+        "Драконово дерево",
+        "Вельвичия удивительная",
+        "Протея королевская",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Какая экосистема является крупнейшим тропическим лесом в мире?",
+      options: [
+        "Сибирская тайга",
+        "Амазонские тропические леса",
+        "Конголезские джунгли",
+        "Леса Юго-Восточной Азии",
+      ],
+      answer: 1,
+    },
+    {
+      question: "Какой статус сохранности у Бурого медведя?",
+      options: [
+        "На грани исчезновения",
+        "Под угрозой",
+        "Уязвимый",
+        "Вызывающий наименьшие опасения",
+      ],
+      answer: 3,
+    },
+    {
+      question: "Какой тип экосистемы является крупнейшим наземным биомом?",
+      options: ["Тропический лес", "Тайга", "Степь", "Пустыня"],
+      answer: 1,
+    },
+    {
+      question:
+        "Какая экосистема играет ключевую роль в глобальном углеродном цикле и хранит запасы углерода в вечной мерзлоте?",
+      options: [
+        "Тундра",
+        "Мангровые заросли",
+        "Саванны",
+        "Листопадные муссонные леса",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Какая угроза является наиболее значимой для коралловых рифов, таких как Большой Барьерный риф?",
+      options: [
+        "Вырубка лесов",
+        "Повышение температуры воды",
+        "Перевыпас скота",
+        "Урбанизация",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Какая экосистема формируется в условиях постоянных антициклонов и характеризуется резкими суточными перепадами температур?",
+      options: [
+        "Субтропические пустыни",
+        "Галерейные леса",
+        "Широколиственные леса",
+        "Антарктические оазисы",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Какая мера охраны наиболее эффективна для сохранения мангровых зарослей?",
+      options: [
+        "Создание искусственных водоемов",
+        "Создание биосферных резерватов",
+        "Осушение болот",
+        "Вырубка инвазивных видов",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Какая экосистема известна как зеленые коридоры вдоль рек в безлесных регионах?",
+      options: [
+        "Тропические редколесья",
+        "Галерейные леса",
+        "Субтропические степи",
+        "Арктические пустыни",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Какая экосистема является переходной зоной между тайгой и тундрой?",
+      options: ["Лесотундра", "Степи", "Морские льды", "Антарктические оазисы"],
+      answer: 0,
+    },
+    {
+      question:
+        "Какая угроза наиболее актуальна для тропических лесов Амазонки?",
+      options: [
+        "Закисление океана",
+        "Вырубка лесов",
+        "Таяние вечной мерзлоты",
+        "Сокращение ледового покрова",
+      ],
+      answer: 1,
     },
   ];
 }

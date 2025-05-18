@@ -28,6 +28,7 @@
 }
 
 .mission-content {
+
   display: flex;
   align-items: center;
   gap: 60px;
@@ -115,6 +116,29 @@
   border-radius: 50%;
 }
 
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 30px auto; 
+    border-radius: 50%;
+}
+
 .team-member h3 {
   font-size: 1.3rem;
   margin-bottom: 5px;
@@ -127,10 +151,12 @@
 }
 
 .bio {
+
   color: #666;
   padding: 0 20px;
   line-height: 1.6;
   font-size: 1rem;
+
 }
 
 /* Секция контактов */
@@ -145,6 +171,7 @@
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 0 20px;
+
 }
 
 .contact-info {
@@ -168,11 +195,11 @@
 }
 
 .contact-details p {
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-  display: flex; 
-  align-items: center;
-  gap: 10px; 
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex; 
+    align-items: center;
+    gap: 10px;
 }
 
 .social-links {
@@ -197,6 +224,11 @@
   transform: translateY(-3px); 
 }
 
+.social-links a:hover {
+    background-color: var(--dark-color);
+    transform: translateY(-3px); 
+}
+
 .social-links img {
   width: 20px;
   height: 20px;
@@ -215,9 +247,11 @@
 }
 
 .form-group label {
+
   display: block; 
   margin-bottom: 8px;
   font-weight: 500;
+
 }
 
 .form-group input,
@@ -258,6 +292,7 @@
   background-color: var(--dark-color);
 }
 
+/* Адаптация  */
 @media (max-width: 768px) {
   /* Герой-секция */
   .about-about {

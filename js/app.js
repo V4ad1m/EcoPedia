@@ -9,17 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Подсветка активной ссылки в меню
-  const currentPage = location.pathname.split("/").pop() || "index.html";
-  const navLinks = document.querySelectorAll(".nav a");
-
-  navLinks.forEach((link) => {
-    const linkPage = link.getAttribute("href").split("/").pop();
-    if (currentPage === linkPage) {
-      link.classList.add("active");
-    }
-  });
-
   // Плавная прокрутка для якорных ссылок
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {

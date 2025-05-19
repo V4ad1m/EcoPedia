@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const allQuizQuestions = await fetchQuizQuestions();
 
   // Настройки викторины
-  const QUIZ_LENGTH = 10; // Количество вопросов в викторине
+  const QUIZ_LENGTH = 10; 
 
   // Элементы DOM
   const quizContent = document.getElementById("quizContent");
@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // Функция для выбора случайных вопросов
   function getRandomQuestions(questions, count) {
-    // Создаем копию массива, чтобы не изменять оригинал
     const shuffled = [...questions].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   }
